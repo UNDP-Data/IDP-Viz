@@ -50,5 +50,12 @@ export const Typography = () => (
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin porttitor dictum. Suspendisse molestie in eros quis hendrerit. Ut viverra, elit ac dictum vestibulum, turpis nunc sodales ex, ac efficitur ipsum dolor non est. Suspendisse luctus ac dolor non tempor. Fusce ut lacus mattis, vestibulum risus non, feugiat purus.
       </code>
     </div>
+    <div className='margin-top-07 margin-bottom-07'>
+      <code className='undp-typography'>Ticks For Graph</code>
+      <br />
+      <div className='undp-tick undp-typography'>
+        Tick 1
+      </div>
+    </div>
   </div>
 );

@@ -1,116 +1,75 @@
-import { Tabs } from 'antd';
+import { Segmented } from 'antd';
+import { useState } from 'react';
+import { OverviewEl } from './OverviewSection';
 import './style/antd.css';
 import './style/style.css';
-import './style/tabStyle.css';
-import { Typography } from './Components/Typography';
-import { Buttons } from './Components/Buttons';
-import { Dropdowns } from './Components/Dropdowns';
-import { Checkboxes } from './Components/Checkboxes';
-import { InputField } from './Components/InputField';
-import { StatCards } from './Components/StatCards';
-import { ScrollBars } from './Components/ScrollBars';
-import { ModalEl } from './Components/ModalEl';
-import { RadioEl } from './Components/RadioEl';
-import { Chips } from './Components/Chips';
-import { TableEl } from './Components/TableEl';
-import { TabsEl } from './Components/TabsEl';
-import { SliderEl } from './Components/Slider';
-import { SegmentedEl } from './Components/SegmentedEl';
-import { HeaderEl } from './Components/HeaderEl';
+import './style/segmentedStyle.css';
+import { EmployementEl } from './Employement';
+import { FinancialResourceEl } from './FinancialResource';
+import { HealthEl } from './Health';
+import { SafetyEl } from './Safety';
+import { EducationEl } from './Education';
 
-const items = [
-  {
-    label: 'Typography',
-    key: '1',
-    children: <Typography />,
-  },
-  {
-    label: 'Buttons',
-    key: '2',
-    children: <Buttons />,
-  },
-  {
-    label: 'Dropdown',
-    key: '3',
-    children: <Dropdowns />,
-  },
-  {
-    label: 'Checkbox',
-    key: '4',
-    children: <Checkboxes />,
-  },
-  {
-    label: 'Radio Button',
-    key: '5',
-    children: <RadioEl />,
-  },
-  {
-    label: 'Input Field',
-    key: '6',
-    children: <InputField />,
-  },
-  {
-    label: 'Text Link',
-    key: '7',
-    children: <a href='/' target='_blank' className='undp-style'>Hello World</a>,
-  },
-  {
-    label: 'Stat Cards',
-    key: '8',
-    children: <StatCards />,
-  },
-  {
-    label: 'Scroll Bar',
-    key: '9',
-    children: <ScrollBars />,
-  },
-  {
-    label: 'Modal',
-    key: '10',
-    children: <ModalEl />,
-  },
-  {
-    label: 'Chips',
-    key: '11',
-    children: <Chips />,
-  },
-  {
-    label: 'Table',
-    key: '12',
-    children: <TableEl />,
-  },
-  {
-    label: 'Tabs',
-    key: '13',
-    children: <TabsEl />,
-  },
-  {
-    label: 'Slider',
-    key: '14',
-    children: <SliderEl />,
-  },
-  {
-    label: 'Segmented',
-    key: '15',
-    children: <SegmentedEl />,
-  },
-  {
-    label: 'Loader',
-    key: '16',
-    children: <div className='undp-loader' />,
-  },
-];
-const App = () => (
-  <div className='undp-container'>
-    <HeaderEl />
-    <div style={{ marginTop: '10rem' }}>
-      <Tabs
-        defaultActiveKey='1'
-        className='undp-tabs'
-        items={items}
-      />
+const App = () => {
+  const [selectedSection, setSelecteedSection] = useState<'overview' | 'employment' | 'finacialResources' | 'health' | 'education' | 'safety'>('overview');
+  return (
+    <div className='undp-container'>
+      <div className='margin-top-05'>
+        <div className='flex-div flex-hor-align-center margin-top-09 margin-bottom-09'>
+          <Segmented
+            className='undp-segmented'
+            onChange={(value) => { setSelecteedSection(value as 'overview' | 'employment' | 'finacialResources' | 'health' | 'education' | 'safety'); }}
+            options={
+              [
+                {
+                  label: 'Overview',
+                  value: 'overview',
+                },
+                {
+                  label: 'Employment',
+                  value: 'employment',
+                },
+                {
+                  label: 'Financial Resources',
+                  value: 'finacialResources',
+                },
+                {
+                  label: 'Health',
+                  value: 'health',
+                },
+                {
+                  label: 'Education',
+                  value: 'education',
+                },
+                {
+                  label: 'Safety',
+                  value: 'safety',
+                },
+              ]
+            }
+          />
+        </div>
+        {
+          selectedSection === 'overview' ? <OverviewEl /> : null
+        }
+        {
+          selectedSection === 'employment' ? <EmployementEl /> : null
+        }
+        {
+          selectedSection === 'finacialResources' ? <FinancialResourceEl /> : null
+        }
+        {
+          selectedSection === 'health' ? <HealthEl /> : null
+        }
+        {
+          selectedSection === 'education' ? <EducationEl /> : null
+        }
+        {
+          selectedSection === 'safety' ? <SafetyEl /> : null
+        }
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default App;
