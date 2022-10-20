@@ -26,7 +26,7 @@ export const DumbellChartGender = (props: Props) => {
             <g transform={`translate(0,${i * 70})`} key={i}>
               <text
                 fill='#000'
-                fontSize={10}
+                fontSize={14}
                 x={0}
                 y={0}
                 dy={10}
