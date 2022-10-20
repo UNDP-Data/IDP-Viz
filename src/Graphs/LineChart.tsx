@@ -5,6 +5,7 @@ interface Props {
   xRange: [number, number];
   maxY: number;
   yTicks: number[];
+  xTicks: number[];
   data: number[][];
 }
 
@@ -19,6 +20,7 @@ export const LineChart = (props: Props) => {
     maxY,
     data,
     yTicks,
+    xTicks,
   } = props;
   const svgWidthhMargin = Math.min(window.innerWidth, 1280);
   const svgWidth = svgWidthhMargin - 30;
@@ -29,7 +31,7 @@ export const LineChart = (props: Props) => {
     .curve(curveMonotoneX);
   return (
     <El>
-      <svg width='100%' viewBox={`0 0 ${svgWidthhMargin} ${svgHeight + 20}`}>
+      <svg width='100%' viewBox={`0 0 ${svgWidthhMargin} ${svgHeight + 40}`}>
         {
           yTicks.map((d, i) => (
             <g
@@ -58,6 +60,25 @@ export const LineChart = (props: Props) => {
             </g>
           ))
         }
+        {
+          xTicks.map((d, i) => (
+            <g
+              key={i}
+              transform='translate(15, 0)'
+            >
+              <text
+                x={(d * svgWidth) / (xRange[1] - xRange[0])}
+                y={svgHeight}
+                fill='#000'
+                opacity={1}
+                fontSize={12}
+                dy={15}
+              >
+                {d}
+              </text>
+            </g>
+          ))
+        }
         <line
           x1={0}
           x2={svgWidthhMargin}
@@ -69,7 +90,7 @@ export const LineChart = (props: Props) => {
         />
         <text
           x={svgWidth / 2}
-          y={400}
+          y={svgHeight + 20}
           fill='#000'
           opacity={1}
           fontSize={12}
