@@ -19,6 +19,40 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
   } = props;
   const svgWidth = Math.min(window.innerWidth, 1280);
   const svgHeight = 190;
+  const data = {
+    host: {
+      all: {
+        men: 0.8,
+        women: 0.61,
+      },
+      primary: {
+        all: 0.57,
+        men: 0.55,
+        women: 0.58,
+      },
+      secondary: {
+        all: 0.75,
+        men: 0.87,
+        women: 0.65,
+      },
+    },
+    idp: {
+      all: {
+        men: 0.52,
+        women: 0.32,
+      },
+      primary: {
+        all: 0.26,
+        men: 0.38,
+        women: 0.16,
+      },
+      secondary: {
+        all: 0.47,
+        men: 0.57,
+        women: 0.37,
+      },
+    },
+  };
   return (
     <El>
       <svg width='100%' viewBox={`0 0 ${svgWidth} ${svgHeight}`}>
@@ -45,15 +79,15 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
           />
           <g transform='translate(0,40)' opacity={women ? 1 : 0}>
             <line
-              x1={(svgWidth * 73) / 100}
-              x2={(svgWidth * 55) / 100}
+              x1={(svgWidth * data.host.all.women)}
+              x2={(svgWidth * data.idp.all.women)}
               y1={0}
               y2={0}
               stroke='#8502F5'
               strokeWidth={1}
               opacity={1}
             />
-            <g transform={`translate(${(svgWidth * 73) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.host.all.women)},0)`}>
               <circle
                 cx={0}
                 cy={0}
@@ -69,10 +103,10 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.73
+                {data.host.all.women}
               </text>
             </g>
-            <g transform={`translate(${(svgWidth * 55) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.idp.all.women)},0)`}>
               <rect
                 x={-5}
                 y={-5}
@@ -89,21 +123,21 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.55
+                {data.idp.all.women}
               </text>
             </g>
           </g>
           <g transform='translate(0,40)' opacity={men ? 1 : 0}>
             <line
-              x1={(svgWidth * 86) / 100}
-              x2={(svgWidth * 69) / 100}
+              x1={(svgWidth * data.host.all.men)}
+              x2={(svgWidth * data.idp.all.men)}
               y1={0}
               y2={0}
               stroke='#00C4A9'
               strokeWidth={1}
               opacity={1}
             />
-            <g transform={`translate(${(svgWidth * 86) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.host.all.men)},0)`}>
               <circle
                 cx={0}
                 cy={0}
@@ -119,10 +153,10 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.86
+                {data.host.all.men}
               </text>
             </g>
-            <g transform={`translate(${(svgWidth * 69) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.idp.all.men)},0)`}>
               <rect
                 x={-5}
                 y={-5}
@@ -139,7 +173,7 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.69
+                {data.idp.all.men}
               </text>
             </g>
           </g>
@@ -167,15 +201,15 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
           />
           <g transform='translate(0,40)' opacity={all ? 1 : 0}>
             <line
-              x1={(svgWidth * 74) / 100}
-              x2={(svgWidth * 56) / 100}
+              x1={(svgWidth * data.host.primary.all)}
+              x2={(svgWidth * data.idp.primary.all)}
               y1={0}
               y2={0}
               stroke='#55606E'
               strokeWidth={1}
               opacity={1}
             />
-            <g transform={`translate(${(svgWidth * 74) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.host.primary.all)},0)`}>
               <circle
                 cx={0}
                 cy={0}
@@ -191,10 +225,10 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.74
+                {data.host.primary.all}
               </text>
             </g>
-            <g transform={`translate(${(svgWidth * 56) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.idp.primary.all)},0)`}>
               <rect
                 x={-5}
                 y={-5}
@@ -211,21 +245,21 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.56
+                {data.idp.primary.all}
               </text>
             </g>
           </g>
           <g transform='translate(0,40)' opacity={women ? 1 : 0}>
             <line
-              x1={(svgWidth * 66) / 100}
-              x2={(svgWidth * 52) / 100}
+              x1={(svgWidth * data.host.primary.women)}
+              x2={(svgWidth * data.idp.primary.women)}
               y1={0}
               y2={0}
               stroke='#8502F5'
               strokeWidth={1}
               opacity={1}
             />
-            <g transform={`translate(${(svgWidth * 66) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.host.primary.women)},0)`}>
               <circle
                 cx={0}
                 cy={0}
@@ -241,10 +275,10 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.66
+                {data.host.primary.women}
               </text>
             </g>
-            <g transform={`translate(${(svgWidth * 52) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.idp.primary.women)},0)`}>
               <rect
                 x={-5}
                 y={-5}
@@ -261,21 +295,21 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.52
+                {data.idp.primary.women}
               </text>
             </g>
           </g>
           <g transform='translate(0,40)' opacity={men ? 1 : 0}>
             <line
-              x1={(svgWidth * 76) / 100}
-              x2={(svgWidth * 63) / 100}
+              x1={(svgWidth * data.host.primary.men)}
+              x2={(svgWidth * data.idp.primary.men)}
               y1={0}
               y2={0}
               stroke='#00C4A9'
               strokeWidth={1}
               opacity={1}
             />
-            <g transform={`translate(${(svgWidth * 76) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.host.primary.men)},0)`}>
               <circle
                 cx={0}
                 cy={0}
@@ -291,10 +325,10 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.76
+                {data.host.primary.men}
               </text>
             </g>
-            <g transform={`translate(${(svgWidth * 63) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.idp.primary.men)},0)`}>
               <rect
                 x={-5}
                 y={-5}
@@ -311,7 +345,7 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.63
+                {data.idp.primary.men}
               </text>
             </g>
           </g>
@@ -339,15 +373,15 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
           />
           <g transform='translate(0,40)' opacity={all ? 1 : 0}>
             <line
-              x1={(svgWidth * 82) / 100}
-              x2={(svgWidth * 65) / 100}
+              x1={(svgWidth * data.host.secondary.all)}
+              x2={(svgWidth * data.idp.secondary.all)}
               y1={0}
               y2={0}
               stroke='#55606E'
               strokeWidth={1}
               opacity={1}
             />
-            <g transform={`translate(${(svgWidth * 82) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.host.secondary.all)},0)`}>
               <circle
                 cx={0}
                 cy={0}
@@ -363,10 +397,10 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.82
+                {data.host.secondary.all}
               </text>
             </g>
-            <g transform={`translate(${(svgWidth * 65) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.idp.secondary.all)},0)`}>
               <rect
                 x={-5}
                 y={-5}
@@ -383,21 +417,21 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.65
+                {data.idp.secondary.all}
               </text>
             </g>
           </g>
           <g transform='translate(0,40)' opacity={women ? 1 : 0}>
             <line
-              x1={(svgWidth * 77) / 100}
-              x2={(svgWidth * 57) / 100}
+              x1={(svgWidth * data.host.secondary.women)}
+              x2={(svgWidth * data.idp.secondary.women)}
               y1={0}
               y2={0}
               stroke='#8502F5'
               strokeWidth={1}
               opacity={1}
             />
-            <g transform={`translate(${(svgWidth * 77) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.host.secondary.women)},0)`}>
               <circle
                 cx={0}
                 cy={0}
@@ -413,10 +447,10 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.77
+                {data.host.secondary.women}
               </text>
             </g>
-            <g transform={`translate(${(svgWidth * 57) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.idp.secondary.women)},0)`}>
               <rect
                 x={-5}
                 y={-5}
@@ -433,21 +467,21 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.57
+                {data.idp.secondary.women}
               </text>
             </g>
           </g>
           <g transform='translate(0,40)' opacity={men ? 1 : 0}>
             <line
-              x1={(svgWidth * 90) / 100}
-              x2={(svgWidth * 73) / 100}
+              x1={(svgWidth * data.host.secondary.men)}
+              x2={(svgWidth * data.idp.secondary.men)}
               y1={0}
               y2={0}
               stroke='#00C4A9'
               strokeWidth={1}
               opacity={1}
             />
-            <g transform={`translate(${(svgWidth * 90) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.host.secondary.men)},0)`}>
               <circle
                 cx={0}
                 cy={0}
@@ -463,10 +497,10 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.9
+                {data.host.secondary.men}
               </text>
             </g>
-            <g transform={`translate(${(svgWidth * 73) / 100},0)`}>
+            <g transform={`translate(${(svgWidth * data.idp.secondary.men)},0)`}>
               <rect
                 x={-5}
                 y={-5}
@@ -483,7 +517,7 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.73
+                {data.idp.secondary.men}
               </text>
             </g>
           </g>

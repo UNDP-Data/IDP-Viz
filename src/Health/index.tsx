@@ -42,11 +42,11 @@ export const HealthEl = () => {
     <div>
       <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
         <CardEl className='stat-card' width='calc(50% - 1rem)'>
-          <h2>1 out of 3</h2>
+          <h2>1 out of 2</h2>
           <p>IDPs report their health worsened after displacement</p>
         </CardEl>
         <CardEl className='stat-card' width='calc(50% - 1rem)'>
-          <h2>12%</h2>
+          <h2>21%</h2>
           <p>More likely to IDPs experienced a physical health decline than hosts</p>
         </CardEl>
       </div>
@@ -56,14 +56,14 @@ export const HealthEl = () => {
             <span className='bold'>IDPs and their children have trouble accessing public services such as health care and education leading to adverse social outcomes.</span>
             <br />
             <br />
-            The effects of displacement are not solely felt in the professional lives of IDPs, as 31% of IDPs reported that their health worsened compared to before they left home. Compared to hosts with similar characteristics,
+            The effects of displacement are not solely felt in the professional lives of IDPs, as 45% of IDPs reported that their health worsened compared to before they left home. Compared to hosts with similar characteristics,
             {' '}
-            <span className='bold'>IDPs are 12% more likely to have experienced a physical health decline after displacement happened</span>
+            <span className='bold'>IDPs are 21% more likely to have experienced a physical health decline after displacement happened</span>
             . Among IDPs, men and women have the same probability of experiencing a decline in health.
             <br />
             <br />
-            <span className='bold'>Healthcare access after displacement appears to be a strong aggravating factor in the probability of experiencing a health decline</span>
-            . On average, a decrease in healthcare access increases the probability of a health decline by 26%, independent of the IDP status and the sex. However, IDPs experience this decline in health care access more strongly than hosts.  As a result, over half of the IDP women who are faced with poorer access to health care services after displacement are expected to see their health deteriorate.
+            <span className='bold'>Healthcare access after displacement is a strong aggravating factor in the probability of experiencing a health decline</span>
+            . On average, a decrease in healthcare access increases the probability of a health decline by 20%, independent of the IDP status and the sex. However, IDPs experience this poor health care access more strongly than hosts with a 25% higher chance of a health decline than if their access had stayed the same or improved.  As a result, 65% of the IDP men who are faced with poorer access to health care services after displacement are expected to see their health deteriorate.
           </p>
         </DivEl>
         <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
@@ -71,7 +71,7 @@ export const HealthEl = () => {
             Probability of having experienced a health decline since displacement (lower is better)
           </h6>
           <p className='margin-bottom-07 bold undp-typography'>
-            Being an IDP is associated with on average a 12% higher probability of physical health decline after displacement
+            Being an IDP is associated with on average a 21% higher probability of physical health decline after displacement. Among IDPs, no significant different in probability is observed for men and women.
           </p>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
             <div className='flex-div flex-vert-align-center flex-gap-02'>
@@ -89,9 +89,10 @@ export const HealthEl = () => {
           </div>
           <DumbellChart
             maxValue={1}
-            data={[[0.18, 0.3], [0.16, 0.28], [0.19, 0.31]]}
+            data={[[0.21, 0.42], [0.16, 0.43], [0.25, 0.4]]}
             titles={['All', 'Men', 'Women']}
             labelSuffix=''
+            marks={['Host', 'IDP']}
           />
         </DivEl>
       </div>
@@ -100,7 +101,7 @@ export const HealthEl = () => {
           Probablity of Experiencing Health Decline by Gender and Health Care Access (lower is better)
         </h6>
         <p className='italics margin-bottom-07 margin-top-07 undp-typography'>
-          Experiencing a decreasing in healthcare access increases the probability of a physical health decline
+          Worse healthcare access than before appears to be a strong aggravating factor in the probability of experiencing a health decline especially for IDPs.
         </p>
         <div className='flex-div flex-space-between'>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>

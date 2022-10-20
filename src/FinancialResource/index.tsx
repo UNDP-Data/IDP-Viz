@@ -39,20 +39,24 @@ export const FinancialResourceEl = () => (
         <p>IDPs report reduced earning after displacement</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(50% - 1rem)'>
-        <h2>68%</h2>
+        <h2>88%</h2>
         <p>IDPs report not having enough financial resources to meet their households’ needs</p>
       </CardEl>
     </div>
     <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
       <DivEl width='calc(50% - 1rem)'>
         <p className='undp-typography'>
-          IDPs incomes and financial resources are strongly impacted by the experience of displacement. 48% of IDPs report earning a lower income at time of survey than they did before moving. IDPs who fell into unemployment and those who could not earn money the same way as before are the most affected. As a result,
+          IDPs’ incomes and financial resources are strongly impacted by the experience of displacement. 51% of IDPs report earning a lower income at the time of survey than they did before moving. IDPs who fell into unemployment and women-respondent households are the most affected. 88% of IDPs report not having enough financial resources to meet their households’ needs.
           {' '}
-          <span className='bold'>68% of IDPs report not having enough financial resources to meet their households’ needs</span>
-          . Households where at least one person is employed are 8% more likely of having sufficient financial resources. However, when looking at IDPs specifically, this effect is not statistically significant. Larger households, with more children, are less likely than the others to have enough financial resources to everyone’s needs.
+          <span className='bold'>At similar characteristics (including similar employment status), being an IDP decreases the probability of having enough financial resources for one’s needs by 19%</span>
+          . The difference between IDPs and hosts is especially striking when comparing men IDPs and men hosts with a 24 percentage points difference. Larger host households, with more children, are less likely than the others to have enough financial resources to meet everyone&apos;s needs. This effect of children is not significant for IDPs. As a result, the gap between IDPs and hosts&apos; financial situation is mostly felt in the smallest households. Moreover,
           {' '}
-          <span className='bold'>Similar probability of employment and similar probabilities of having enough financial resources are found amongst the newly displaced and those that had been displaced for several years</span>
-          .
+          <span className='bold'>employment does not have a significant effect on the financial resources of IDPs</span>
+          . Indeed, 60% of IDPs who managed to keep their job still declared having lower incomes after displacement. However,
+          {' '}
+          <span className='bold'>the longer IDPs have been settled in their new location, the more their situation appears to improve</span>
+          {' '}
+          as every six months at destination increases the probability of being employed by 2.3 percentage points on average and the probability of having enough financial resources by 1.4 percentage points.
         </p>
       </DivEl>
       <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
@@ -60,7 +64,7 @@ export const FinancialResourceEl = () => (
           Probablity of having financial resource to meet the household needs (higher is better)
         </h6>
         <p className='margin-bottom-07 bold undp-typography'>
-          Having at least one person employed in the household has no significant effect on the probablity that the IDPs have enough financial resources
+          Having at least one person employed in the household has no significant effect on average. This is true for both IDP and hosts households.
         </p>
         <div className='flex-div' style={{ fontSize: '0.875rem' }}>
           <div className='flex-div flex-vert-align-center flex-gap-02'>
@@ -78,9 +82,10 @@ export const FinancialResourceEl = () => (
         </div>
         <DumbellChart
           maxValue={1}
-          data={[[0.34, 0.28], [0.45, 0.33]]}
+          data={[[0.13, 0.14], [0.36, 0.23]]}
           titles={['IDPs', 'Hosts']}
           labelSuffix=''
+          marks={['Host', 'IDP']}
         />
       </DivEl>
     </div>
@@ -90,7 +95,7 @@ export const FinancialResourceEl = () => (
           Changes in Probablity of IDP household having atleast one member employed and Have Enough Financial Resources with Time
         </h6>
         <p className='italics margin-bottom-07 margin-top-07 undp-typography'>
-          The probablity of employment and financial situation of IDP households doesnt seem to improve with time
+          The longer IDPs have been settled in their new location, the more their situation appears to improve.
         </p>
         <div className='flex-div'>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
@@ -109,14 +114,14 @@ export const FinancialResourceEl = () => (
           </div>
         </div>
         <LineChart
-          xRange={[0, 20]}
-          maxY={0.85}
+          xRange={[0, 5]}
+          maxY={0.75}
           data={[
-            [0.32, 0.32, 0.32, 0.31, 0.31, 0.31, 0.31, 0.3, 0.3, 0.3, 0.3, 0.29, 0.29, 0.29, 0.29, 0.28, 0.28, 0.28, 0.28, 0.27, 0.27],
-            [0.75, 0.74, 0.74, 0.74, 0.74, 0.74, 0.74, 0.74, 0.73, 0.73, 0.73, 0.73, 0.73, 0.73, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.71],
+            [0.08, 0.1, 0.12, 0.14, 0.17, 0.2],
+            [0.47, 0.51, 0.55, 0.58, 0.62, 0.65],
           ]}
-          yTicks={[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]}
-          xTicks={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]}
+          yTicks={[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7]}
+          xTicks={[0, 1, 2, 3, 4, 5]}
         />
       </div>
     </div>

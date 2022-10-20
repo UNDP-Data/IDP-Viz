@@ -41,28 +41,25 @@ export const EmployementEl = () => {
     <div>
       <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
         <CardEl className='stat-card' width='calc(50% - 1rem)'>
-          <h2>1 out of 3</h2>
+          <h2>1 out of 2</h2>
           <p>IDPs report falling into unemployment following displacement</p>
         </CardEl>
         <CardEl className='stat-card' width='calc(50% - 1rem)'>
-          <h2>14%</h2>
+          <h2>26%</h2>
           <p>less likely IDPs have one member employed compared to host</p>
         </CardEl>
       </div>
       <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
         <DivEl width='calc(50% - 1rem)'>
           <p className='undp-typography'>
-            Survey data highlight the major disruption in professional lives experienced by IDPs as 30% of them report falling into unemployment following displacement.  As a result,
+            Survey data highlight the major disruption in professional lives experienced by IDPs as 49% of them report falling into unemployment following displacement. As a result, compared to members of the host community,
             {' '}
-            <span className='bold'>compared to members of the host community, IDP households were on average, 14% less likely to have at least one member employed at the time of survey</span>
+            <span className='bold'>IDP households were on average, 26% less likely to have at least one member employed at the time of survey</span>
             . This is true in households of both women and men-respondents.
             {' '}
-            <span className='bold'>A significant gender gap is observed in the probability of employment of the respondents both in IDP and hosts communities</span>
-            . IDP men are 14% more likely to be employed on average than IDP women. The gender gap is very similar in host communities with a 13% gap.
+            <span className='bold'>A significant gender gap is observed in the probability of employment</span>
             {' '}
-            <span className='bold'>IDPs with lower levels of education are more vulnerable</span>
-            {' '}
-            and having secondary education and above increases the probability of employment by 10% on average.
+            of the respondents both in IDP and hosts communities. Men are 19% more likely to be employed on average than women, both among IDPs and hosts. IDPs with lower levels of education are more vulnerable and having secondary education and above increases the probability of employment by 20% on average. Similar levels of unemployment are found amongst the newly displaced and those that had been displaced for several years.
           </p>
         </DivEl>
         <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
@@ -85,9 +82,10 @@ export const EmployementEl = () => {
           </div>
           <DumbellChart
             maxValue={100}
-            data={[[40.67, 54.11], [38.85, 49.64]]}
+            data={[[41, 85], [41, 84]]}
             titles={['Respondents', 'Other household members']}
             labelSuffix='%'
+            marks={['Host', 'IDP']}
           />
         </DivEl>
       </div>

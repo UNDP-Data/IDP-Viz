@@ -26,7 +26,7 @@ export const SingleLineChart = (props: Props) => {
   const svgWidth = svgWidthhMargin - 30;
   const svgHeight = 400;
   const lineShape1 = line()
-    .x((_d: any, i) => (i * svgWidth) / (xRange[1] - xRange[0]))
+    .x((_d: any, i) => ((i / 2) * svgWidth) / (xRange[1] - xRange[0]))
     .y((d: any) => svgHeight - ((d * svgHeight) / maxY))
     .curve(curveMonotoneX);
   return (
@@ -107,13 +107,13 @@ export const SingleLineChart = (props: Props) => {
                 key={i}
               >
                 <circle
-                  cx={(i * svgWidth) / (xRange[1] - xRange[0])}
+                  cx={((i / 2) * svgWidth) / (xRange[1] - xRange[0])}
                   cy={svgHeight - ((d * svgHeight) / maxY)}
                   r={4}
                   fill='#3288CE'
                 />
                 <text
-                  x={(i * svgWidth) / (xRange[1] - xRange[0])}
+                  x={((i / 2) * svgWidth) / (xRange[1] - xRange[0])}
                   y={svgHeight - ((d * svgHeight) / maxY)}
                   dy={-8}
                   fontSize={12}

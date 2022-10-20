@@ -26,7 +26,7 @@ export const DumbellChartGender = (props: Props) => {
             <g transform={`translate(0,${i * 70})`} key={i}>
               <text
                 fill='#000'
-                fontSize={14}
+                fontSize={10}
                 x={0}
                 y={0}
                 dy={10}
@@ -64,7 +64,7 @@ export const DumbellChartGender = (props: Props) => {
                   />
                   <text
                     fill='#00C4A9'
-                    fontSize={14}
+                    fontSize={10}
                     x={0}
                     y={0}
                     dy={-10}
@@ -73,6 +73,18 @@ export const DumbellChartGender = (props: Props) => {
                   >
                     {data[i][0]}
                     {labelSuffix}
+                  </text>
+                  <text
+                    fill='#00C4A9'
+                    fontSize={10}
+                    x={0}
+                    y={0}
+                    dy={3}
+                    dx={data[i][1] > data[i][0] ? -7 : 7}
+                    textAnchor={data[i][1] > data[i][0] ? 'end' : 'start'}
+                    fontWeight='bold'
+                  >
+                    Men
                   </text>
                 </g>
                 <g transform={`translate(${(svgWidth * data[i][1]) / maxValue},0)`}>
@@ -85,7 +97,7 @@ export const DumbellChartGender = (props: Props) => {
                   />
                   <text
                     fill='#8502F5'
-                    fontSize={14}
+                    fontSize={10}
                     x={0}
                     y={0}
                     dy={-10}
@@ -94,6 +106,18 @@ export const DumbellChartGender = (props: Props) => {
                   >
                     {data[i][1]}
                     {labelSuffix}
+                  </text>
+                  <text
+                    fill='#8502F5'
+                    fontSize={10}
+                    x={0}
+                    y={0}
+                    dy={3}
+                    dx={data[i][1] > data[i][0] ? 7 : -7}
+                    textAnchor={data[i][1] > data[i][0] ? 'start' : 'end'}
+                    fontWeight='bold'
+                  >
+                    Women
                   </text>
                 </g>
               </g>
