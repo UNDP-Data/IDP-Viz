@@ -58,8 +58,8 @@ export const SafetyEl = () => (
         </div>
         <DumbellChartGender
           maxValue={1}
-          data={[[0.82, 0.78], [0.8, 0.81], [0.69, 0.43]]}
-          titles={['Own or Rent Homes', 'Live in a House Free of Charge', 'Live in a Shelter']}
+          data={[[0.78, 0.8], [0.94, 0.95]]}
+          titles={['Host', 'IDPs']}
           labelSuffix=''
         />
       </DivEl>

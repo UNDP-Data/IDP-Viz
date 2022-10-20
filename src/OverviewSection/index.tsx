@@ -40,7 +40,7 @@ export const OverviewEl = () => (
   <div>
     <div className='flex-wrap flex-div max-width margin-bottom-09 flex-space-between' style={{ alignItems: 'stretch' }}>
       <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
-        <h2>40</h2>
+        <h2>41</h2>
         <p>Average age of IDP respondents</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
@@ -49,7 +49,7 @@ export const OverviewEl = () => (
             IDP
           </div>
           <BarEl style={{ width: '75.38%' }}>
-            49%
+            90%
           </BarEl>
         </BarContainer>
         <BarContainer>
@@ -57,37 +57,28 @@ export const OverviewEl = () => (
             Host
           </div>
           <BarEl style={{ width: '100%' }}>
-            65%
+            24%
           </BarEl>
         </BarContainer>
-        <p>Have secondary education or above</p>
+        <p>Have no education</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
-        <h2>81%</h2>
+        <h2>97%</h2>
         <p>IDPs live with at least one child under 18</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
-        <h2>18%</h2>
+        <h2>19%</h2>
         <p>IDPs households have at least one household member with disability</p>
       </CardEl>
     </div>
     <div className='max-width margin-bottom-05'>
       <h3 className='undp-typography'>
-        IDPs were forced out of their homes due to conflict and disasters.
+        All Ethiopian IDPs in the sample moved due to droughts
       </h3>
       <div className='flex-wrap flex-div max-width flex-space-between' style={{ alignItems: 'stretch' }}>
         <DivEl width='calc(33.33% - 1rem)'>
           <p className='undp-typography'>
-            IDPs sampled moved for various reasons depending on which country they are from:
-            {' '}
-            <span className='bold'>33% due to conflict, violence or insecurity</span>
-            , the rest due to climate and meteorological causes among which
-            {' '}
-            <span className='bold'>floods (27 %), droughts (11.7%), earthquakes (11.6%), sea levels risings (10%) and others (volcanic eruptions, tsunami, landslides and cyclones)</span>
-            .
-            <br />
-            <br />
-            Not only do we have heterogeneity in the reason for displacements, but also the intensity varies. IDPs experience more occurrences of displacement when they are affected by droughts and conflicts followed by floods.
+            67% stayed within their region of origin while 33% crossed regional borders. More than half of these IDPs had to move three times or more. The average IDP household has been in its current location for two years and two months with earliest arrivals dating back from three years before and the latest from 8 months before survey.
           </p>
         </DivEl>
         <DivEl width='calc(66.66% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
