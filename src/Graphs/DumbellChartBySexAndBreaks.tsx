@@ -13,6 +13,28 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
   const { selected } = props;
   const svgWidth = Math.min(window.innerWidth, 1280);
   const svgHeight = 190;
+  const data = {
+    host: {
+      break: {
+        boys: 0.94,
+        girls: 0.9,
+      },
+      noBreak: {
+        boys: 0.97,
+        girls: 0.93,
+      },
+    },
+    idp: {
+      break: {
+        boys: 0.92,
+        girls: 0.84,
+      },
+      noBreak: {
+        boys: 0.94,
+        girls: 0.91,
+      },
+    },
+  };
   return (
     <El>
       <svg width='100%' viewBox={`0 0 ${svgWidth} ${svgHeight}`}>
@@ -39,15 +61,15 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
           />
           <g transform='translate(0,40)' opacity={selected === 2 ? 1 : 0}>
             <line
-              x1={(svgWidth * 0.97)}
-              x2={(svgWidth * 0.94)}
+              x1={(svgWidth * data.host.noBreak.boys)}
+              x2={(svgWidth * data.host.break.boys)}
               y1={0}
               y2={0}
               stroke='#55606E'
               strokeWidth={1}
               opacity={1}
             />
-            <g transform={`translate(${(svgWidth * 0.97)},0)`}>
+            <g transform={`translate(${(svgWidth * data.host.noBreak.boys)},0)`}>
               <circle
                 cx={0}
                 cy={0}
@@ -63,10 +85,22 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.97
+                {data.host.noBreak.boys}
+              </text>
+              <text
+                fill='#8502F5'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.host.noBreak.boys > data.host.break.boys ? 7 : -7}
+                textAnchor={data.host.noBreak.boys > data.host.break.boys ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                No Breaks
               </text>
             </g>
-            <g transform={`translate(${(svgWidth * 0.94)},0)`}>
+            <g transform={`translate(${(svgWidth * data.host.break.boys)},0)`}>
               <circle
                 cx={0}
                 cy={0}
@@ -82,21 +116,33 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.94
+                {data.host.break.boys}
+              </text>
+              <text
+                fill='#00C4A9'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.host.noBreak.boys < data.host.break.boys ? 7 : -7}
+                textAnchor={data.host.noBreak.boys < data.host.break.boys ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                Break
               </text>
             </g>
           </g>
           <g transform='translate(0,40)' opacity={selected === 1 ? 1 : 0}>
             <line
-              x1={(svgWidth * 0.92)}
-              x2={(svgWidth * 0.94)}
+              x1={(svgWidth * data.idp.break.boys)}
+              x2={(svgWidth * data.idp.noBreak.boys)}
               y1={0}
               y2={0}
               stroke='#D4D6D8'
               strokeWidth={1}
               opacity={1}
             />
-            <g transform={`translate(${(svgWidth * 0.94)},0)`}>
+            <g transform={`translate(${(svgWidth * data.idp.noBreak.boys)},0)`}>
               <rect
                 x={-5}
                 y={-5}
@@ -113,10 +159,22 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.94
+                {data.idp.noBreak.boys}
+              </text>
+              <text
+                fill='#8502F5'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.idp.noBreak.boys > data.idp.break.boys ? 7 : -7}
+                textAnchor={data.idp.noBreak.boys > data.idp.break.boys ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                No Breaks
               </text>
             </g>
-            <g transform={`translate(${(svgWidth * 0.92)},0)`}>
+            <g transform={`translate(${(svgWidth * data.idp.break.boys)},0)`}>
               <rect
                 x={-5}
                 y={-5}
@@ -133,7 +191,19 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.92
+                {data.idp.break.boys}
+              </text>
+              <text
+                fill='#00C4A9'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.idp.noBreak.boys < data.idp.break.boys ? 7 : -7}
+                textAnchor={data.idp.noBreak.boys < data.idp.break.boys ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                Break
               </text>
             </g>
           </g>
@@ -161,15 +231,15 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
           />
           <g transform='translate(0,40)' opacity={selected === 2 ? 1 : 0}>
             <line
-              x1={(svgWidth * 0.93)}
-              x2={(svgWidth * 0.9)}
+              x1={(svgWidth * data.host.noBreak.girls)}
+              x2={(svgWidth * data.host.break.girls)}
               y1={0}
               y2={0}
               stroke='#55606E'
               strokeWidth={1}
               opacity={1}
             />
-            <g transform={`translate(${(svgWidth * 0.93)},0)`}>
+            <g transform={`translate(${(svgWidth * data.host.noBreak.girls)},0)`}>
               <circle
                 cx={0}
                 cy={0}
@@ -185,10 +255,22 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.93
+                {data.host.noBreak.girls}
+              </text>
+              <text
+                fill='#8502F5'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.host.noBreak.girls > data.host.break.girls ? 7 : -7}
+                textAnchor={data.host.noBreak.girls > data.host.break.girls ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                No Breaks
               </text>
             </g>
-            <g transform={`translate(${(svgWidth * 0.9)},0)`}>
+            <g transform={`translate(${(svgWidth * data.host.break.girls)},0)`}>
               <circle
                 cx={0}
                 cy={0}
@@ -204,21 +286,33 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.9
+                {data.host.break.girls}
+              </text>
+              <text
+                fill='#00C4A9'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.host.noBreak.girls < data.host.break.girls ? 7 : -7}
+                textAnchor={data.host.noBreak.girls < data.host.break.girls ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                Break
               </text>
             </g>
           </g>
           <g transform='translate(0,40)' opacity={selected === 1 ? 1 : 0}>
             <line
-              x1={(svgWidth * 0.84)}
-              x2={(svgWidth * 0.91)}
+              x1={(svgWidth * data.idp.break.girls)}
+              x2={(svgWidth * data.idp.noBreak.girls)}
               y1={0}
               y2={0}
               stroke='#D4D6D8'
               strokeWidth={1}
               opacity={1}
             />
-            <g transform={`translate(${(svgWidth * 0.91)},0)`}>
+            <g transform={`translate(${(svgWidth * data.idp.noBreak.girls)},0)`}>
               <rect
                 x={-5}
                 y={-5}
@@ -235,10 +329,22 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.91
+                {data.idp.noBreak.girls}
+              </text>
+              <text
+                fill='#8502F5'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.idp.noBreak.girls > data.idp.break.girls ? 7 : -7}
+                textAnchor={data.idp.noBreak.girls > data.idp.break.girls ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                No Breaks
               </text>
             </g>
-            <g transform={`translate(${(svgWidth * 0.84)},0)`}>
+            <g transform={`translate(${(svgWidth * data.idp.break.girls)},0)`}>
               <rect
                 x={-5}
                 y={-5}
@@ -255,7 +361,19 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
                 textAnchor='middle'
                 fontWeight='bold'
               >
-                0.84
+                {data.idp.break.girls}
+              </text>
+              <text
+                fill='#00C4A9'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.idp.noBreak.girls < data.idp.break.girls ? 7 : -7}
+                textAnchor={data.idp.noBreak.girls < data.idp.break.girls ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                Breaks
               </text>
             </g>
           </g>
