@@ -55,7 +55,7 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
   };
   return (
     <El>
-      <svg width='100%' viewBox={`0 0 ${svgWidth} ${svgHeight}`}>
+      <svg width='100%' viewBox={`0 0 ${svgWidth} ${svgHeight + 10}`}>
         <g transform='translate(0,0)'>
           <text
             fill='#000'
@@ -105,6 +105,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
               >
                 {data.host.all.women}
               </text>
+              <text
+                fill='#8502F5'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                Host W
+              </text>
             </g>
             <g transform={`translate(${(svgWidth * data.idp.all.women)},0)`}>
               <rect
@@ -124,6 +135,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 fontWeight='bold'
               >
                 {data.idp.all.women}
+              </text>
+              <text
+                fill='#8502F5'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                IDP W
               </text>
             </g>
           </g>
@@ -155,6 +177,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
               >
                 {data.host.all.men}
               </text>
+              <text
+                fill='#00C4A9'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                Host M
+              </text>
             </g>
             <g transform={`translate(${(svgWidth * data.idp.all.men)},0)`}>
               <rect
@@ -174,6 +207,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 fontWeight='bold'
               >
                 {data.idp.all.men}
+              </text>
+              <text
+                fill='#00C4A9'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                IDP M
               </text>
             </g>
           </g>
@@ -227,6 +271,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
               >
                 {data.host.primary.all}
               </text>
+              <text
+                fill='#55606E'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                Host
+              </text>
             </g>
             <g transform={`translate(${(svgWidth * data.idp.primary.all)},0)`}>
               <rect
@@ -246,6 +301,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 fontWeight='bold'
               >
                 {data.idp.primary.all}
+              </text>
+              <text
+                fill='#55606E'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                IDP
               </text>
             </g>
           </g>
@@ -277,6 +343,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
               >
                 {data.host.primary.women}
               </text>
+              <text
+                fill='#8502F5'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                Host W
+              </text>
             </g>
             <g transform={`translate(${(svgWidth * data.idp.primary.women)},0)`}>
               <rect
@@ -296,6 +373,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 fontWeight='bold'
               >
                 {data.idp.primary.women}
+              </text>
+              <text
+                fill='#8502F5'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                IDP W
               </text>
             </g>
           </g>
@@ -327,6 +415,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
               >
                 {data.host.primary.men}
               </text>
+              <text
+                fill='#00C4A9'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                Host M
+              </text>
             </g>
             <g transform={`translate(${(svgWidth * data.idp.primary.men)},0)`}>
               <rect
@@ -346,6 +445,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 fontWeight='bold'
               >
                 {data.idp.primary.men}
+              </text>
+              <text
+                fill='#00C4A9'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                IDP M
               </text>
             </g>
           </g>
@@ -399,6 +509,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
               >
                 {data.host.secondary.all}
               </text>
+              <text
+                fill='#55606E'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                IDP
+              </text>
             </g>
             <g transform={`translate(${(svgWidth * data.idp.secondary.all)},0)`}>
               <rect
@@ -418,6 +539,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 fontWeight='bold'
               >
                 {data.idp.secondary.all}
+              </text>
+              <text
+                fill='#55606E'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                IDP
               </text>
             </g>
           </g>
@@ -449,6 +581,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
               >
                 {data.host.secondary.women}
               </text>
+              <text
+                fill='#8502F5'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                Host W
+              </text>
             </g>
             <g transform={`translate(${(svgWidth * data.idp.secondary.women)},0)`}>
               <rect
@@ -468,6 +611,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 fontWeight='bold'
               >
                 {data.idp.secondary.women}
+              </text>
+              <text
+                fill='#8502F5'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                IDP W
               </text>
             </g>
           </g>
@@ -499,6 +653,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
               >
                 {data.host.secondary.men}
               </text>
+              <text
+                fill='#00C4A9'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                Host M
+              </text>
             </g>
             <g transform={`translate(${(svgWidth * data.idp.secondary.men)},0)`}>
               <rect
@@ -518,6 +683,17 @@ export const DumbellChartBySexAndEdu = (props: Props) => {
                 fontWeight='bold'
               >
                 {data.idp.secondary.men}
+              </text>
+              <text
+                fill='#00C4A9'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={15}
+                textAnchor='middle'
+                fontWeight='bold'
+              >
+                IDP M
               </text>
             </g>
           </g>

@@ -87,6 +87,18 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
               >
                 {data.host.noBreak.boys}
               </text>
+              <text
+                fill='#8502F5'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.host.noBreak.boys > data.host.break.boys ? 7 : -7}
+                textAnchor={data.host.noBreak.boys > data.host.break.boys ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                No Breaks
+              </text>
             </g>
             <g transform={`translate(${(svgWidth * data.host.break.boys)},0)`}>
               <circle
@@ -105,6 +117,18 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
                 fontWeight='bold'
               >
                 {data.host.break.boys}
+              </text>
+              <text
+                fill='#00C4A9'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.host.noBreak.boys < data.host.break.boys ? 7 : -7}
+                textAnchor={data.host.noBreak.boys < data.host.break.boys ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                Break
               </text>
             </g>
           </g>
@@ -137,6 +161,18 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
               >
                 {data.idp.noBreak.boys}
               </text>
+              <text
+                fill='#8502F5'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.idp.noBreak.boys > data.idp.break.boys ? 7 : -7}
+                textAnchor={data.idp.noBreak.boys > data.idp.break.boys ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                No Breaks
+              </text>
             </g>
             <g transform={`translate(${(svgWidth * data.idp.break.boys)},0)`}>
               <rect
@@ -156,6 +192,18 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
                 fontWeight='bold'
               >
                 {data.idp.break.boys}
+              </text>
+              <text
+                fill='#00C4A9'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.idp.noBreak.boys < data.idp.break.boys ? 7 : -7}
+                textAnchor={data.idp.noBreak.boys < data.idp.break.boys ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                Break
               </text>
             </g>
           </g>
@@ -209,6 +257,18 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
               >
                 {data.host.noBreak.girls}
               </text>
+              <text
+                fill='#8502F5'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.host.noBreak.girls > data.host.break.girls ? 7 : -7}
+                textAnchor={data.host.noBreak.girls > data.host.break.girls ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                No Breaks
+              </text>
             </g>
             <g transform={`translate(${(svgWidth * data.host.break.girls)},0)`}>
               <circle
@@ -227,6 +287,18 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
                 fontWeight='bold'
               >
                 {data.host.break.girls}
+              </text>
+              <text
+                fill='#00C4A9'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.host.noBreak.girls < data.host.break.girls ? 7 : -7}
+                textAnchor={data.host.noBreak.girls < data.host.break.girls ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                Break
               </text>
             </g>
           </g>
@@ -259,6 +331,18 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
               >
                 {data.idp.noBreak.girls}
               </text>
+              <text
+                fill='#8502F5'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.idp.noBreak.girls > data.idp.break.girls ? 7 : -7}
+                textAnchor={data.idp.noBreak.girls > data.idp.break.girls ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                No Breaks
+              </text>
             </g>
             <g transform={`translate(${(svgWidth * data.idp.break.girls)},0)`}>
               <rect
@@ -278,6 +362,18 @@ export const DumbellChartBySexAndBreaks = (props: Props) => {
                 fontWeight='bold'
               >
                 {data.idp.break.girls}
+              </text>
+              <text
+                fill='#00C4A9'
+                fontSize={10}
+                x={0}
+                y={0}
+                dy={4}
+                dx={data.idp.noBreak.girls < data.idp.break.girls ? 7 : -7}
+                textAnchor={data.idp.noBreak.girls < data.idp.break.girls ? 'start' : 'end'}
+                fontWeight='bold'
+              >
+                Breaks
               </text>
             </g>
           </g>
