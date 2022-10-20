@@ -35,24 +35,21 @@ export const FinancialResourceEl = () => (
   <div>
     <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
       <CardEl className='stat-card' width='calc(50% - 1rem)'>
-        <h2>1 out of 2</h2>
-        <p>IDPs report reduced earning after displacement</p>
+        <h2>1 out of 10</h2>
+        <p>IDPs report falling into unemployment after displacement</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(50% - 1rem)'>
-        <h2>68%</h2>
+        <h2>47%</h2>
         <p>IDPs report not having enough financial resources to meet their households’ needs</p>
       </CardEl>
     </div>
     <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
       <DivEl width='calc(50% - 1rem)'>
         <p className='undp-typography'>
-          IDPs incomes and financial resources are strongly impacted by the experience of displacement. 48% of IDPs report earning a lower income at time of survey than they did before moving. IDPs who fell into unemployment and those who could not earn money the same way as before are the most affected. As a result,
+          Survey data highlight the disruption in professional lives experienced by IDPs as 10% of them report falling into unemployment following displacement and 6% had to earn money in a different way than before. Moreover, the share of households who have enough financial resources to meet their families’ needs dropped from 59% before displacement to only 47% afterwards. Compared to hosts with similar characteristics (including similar employment status),
           {' '}
-          <span className='bold'>68% of IDPs report not having enough financial resources to meet their households’ needs</span>
-          . Households where at least one person is employed are 8% more likely of having sufficient financial resources. However, when looking at IDPs specifically, this effect is not statistically significant. Larger households, with more children, are less likely than the others to have enough financial resources to everyone’s needs.
-          {' '}
-          <span className='bold'>Similar probability of employment and similar probabilities of having enough financial resources are found amongst the newly displaced and those that had been displaced for several years</span>
-          .
+          <span className='bold'>being an IDP decreases the probability of having enough financial resources for the household’s needs by 26%</span>
+          . Having at least one household member who is employed increases the probability of IDPs having enough financial resources by 30%. Similar levels of unemployment and financial resources are found amongst the newly displaced and those that had been displaced for several years pointing towards no improvement in the long term.
         </p>
       </DivEl>
       <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
@@ -78,8 +75,8 @@ export const FinancialResourceEl = () => (
         </div>
         <DumbellChart
           maxValue={1}
-          data={[[0.34, 0.28], [0.45, 0.33]]}
-          titles={['IDPs', 'Hosts']}
+          data={[[0.7, 0.36]]}
+          titles={['IDPs']}
           labelSuffix=''
           marks={['1 member employed', 'No on employed']}
         />
@@ -110,14 +107,14 @@ export const FinancialResourceEl = () => (
           </div>
         </div>
         <LineChart
-          xRange={[0, 20]}
-          maxY={0.85}
+          xRange={[0, 30]}
+          maxY={1}
           data={[
-            [0.32, 0.32, 0.32, 0.31, 0.31, 0.31, 0.31, 0.3, 0.3, 0.3, 0.3, 0.29, 0.29, 0.29, 0.29, 0.28, 0.28, 0.28, 0.28, 0.27, 0.27],
-            [0.75, 0.74, 0.74, 0.74, 0.74, 0.74, 0.74, 0.74, 0.73, 0.73, 0.73, 0.73, 0.73, 0.73, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.71],
+            [0.75, 0.73, 0.7, 0.68, 0.65, 0.62, 0.6],
+            [0.94, 0.93, 0.91, 0.9, 0.88, 0.86, 0.84],
           ]}
-          yTicks={[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]}
-          xTicks={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]}
+          yTicks={[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]}
+          xTicks={[0, 5, 10, 15, 20, 25, 30]}
         />
       </div>
     </div>

@@ -4,7 +4,6 @@ import { OverviewEl } from './OverviewSection';
 import './style/antd.css';
 import './style/style.css';
 import './style/segmentedStyle.css';
-import { EmployementEl } from './Employement';
 import { FinancialResourceEl } from './FinancialResource';
 import { HealthEl } from './Health';
 import { SafetyEl } from './Safety';
@@ -24,10 +23,6 @@ const App = () => {
                 {
                   label: 'Overview',
                   value: 'overview',
-                },
-                {
-                  label: 'Employment',
-                  value: 'employment',
                 },
                 {
                   label: 'Financial Resources',
@@ -51,9 +46,6 @@ const App = () => {
         </div>
         {
           selectedSection === 'overview' ? <OverviewEl /> : null
-        }
-        {
-          selectedSection === 'employment' ? <EmployementEl /> : null
         }
         {
           selectedSection === 'finacialResources' ? <FinancialResourceEl /> : null
