@@ -85,7 +85,7 @@ export const FinancialResourceEl = () => (
           data={[[0.13, 0.14], [0.36, 0.23]]}
           titles={['IDPs', 'Hosts']}
           labelSuffix=''
-          marks={['Host', 'IDP']}
+          marks={['1 menber employed', 'No one employed']}
         />
       </DivEl>
     </div>
