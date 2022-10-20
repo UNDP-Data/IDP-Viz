@@ -5,6 +5,7 @@ interface Props {
   titles: string[];
   maxValue: number;
   labelSuffix: string;
+  marks: [string, string];
 }
 
 const El = styled.div`
@@ -14,7 +15,7 @@ const El = styled.div`
 
 export const DumbellChart = (props: Props) => {
   const {
-    data, titles, maxValue, labelSuffix,
+    data, titles, maxValue, labelSuffix, marks,
   } = props;
   const svgWidth = Math.min(window.innerWidth, 620);
   const svgHeight = 70 * (titles.length - 1) + 50;
@@ -73,6 +74,18 @@ export const DumbellChart = (props: Props) => {
                     {data[i][0]}
                     {labelSuffix}
                   </text>
+                  <text
+                    fill='#232E3D'
+                    fontSize={10}
+                    x={0}
+                    y={0}
+                    dy={4}
+                    dx={data[i][1] > data[i][0] ? -7 : 7}
+                    textAnchor={data[i][1] > data[i][0] ? 'end' : 'start'}
+                    fontWeight='bold'
+                  >
+                    {marks[0]}
+                  </text>
                 </g>
                 <g transform={`translate(${(svgWidth * data[i][1]) / maxValue},0)`}>
                   <rect
@@ -93,6 +106,18 @@ export const DumbellChart = (props: Props) => {
                   >
                     {data[i][1]}
                     {labelSuffix}
+                  </text>
+                  <text
+                    fill='#232E3D'
+                    fontSize={10}
+                    x={0}
+                    y={0}
+                    dy={4}
+                    dx={data[i][1] > data[i][0] ? 7 : -7}
+                    textAnchor={data[i][1] > data[i][0] ? 'start' : 'end'}
+                    fontWeight='bold'
+                  >
+                    {marks[1]}
                   </text>
                 </g>
               </g>

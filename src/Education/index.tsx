@@ -81,6 +81,7 @@ export const EducationEl = () => {
             data={[[0.35, 0.63], [0.38, 0.65], [0.31, 0.61]]}
             titles={['All', 'Boys', 'Girls']}
             labelSuffix=''
+            marks={['Host', 'IDP']}
           />
         </DivEl>
       </div>
@@ -108,6 +109,7 @@ export const EducationEl = () => {
             data={[[0.93, 0.91], [0.96, 0.94], [0.9, 0.87]]}
             titles={['All', 'Boys', 'Girls']}
             labelSuffix=''
+            marks={['Host', 'IDP']}
           />
         </DivEl>
         <DivEl width='calc(50% - 1rem)'>

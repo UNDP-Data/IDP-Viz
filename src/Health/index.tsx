@@ -92,6 +92,7 @@ export const HealthEl = () => {
             data={[[0.18, 0.3], [0.16, 0.28], [0.19, 0.31]]}
             titles={['All', 'Men', 'Women']}
             labelSuffix=''
+            marks={['Host', 'IDP']}
           />
         </DivEl>
       </div>

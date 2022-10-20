@@ -88,6 +88,7 @@ export const EmployementEl = () => {
             data={[[40.67, 54.11], [38.85, 49.64]]}
             titles={['Respondents', 'Other household members']}
             labelSuffix='%'
+            marks={['Host', 'IDP']}
           />
         </DivEl>
       </div>
