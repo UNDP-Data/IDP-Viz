@@ -52,7 +52,10 @@ export const EducationEl = () => {
       <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
         <DivEl width='calc(50% - 1rem)'>
           <p className='undp-typography'>
-            IDP children’s lives are also majorly impacted, especially as displacement has a strong effect on the continuity of their education. Over 61% of IDP children experienced breaks in education due to displacement. Compared to hosts’ children with similar characteristics, children of IDPs are on average 28% more likely to have stopped going to school at some point. Children with many siblings are the most at risk: an internally displaced child with no siblings has a 54% probability of experiencing breaks in education compared to a 65% probability if he or she has three siblings. On the contrary, no major differences are observed between the probability of boys and girls to have experienced breaks in education.   As a result, compared to members of the host community, IDP households were on average, 14% less likely to have at least one member employed at the time of survey. This is true in households of both women and men-respondents. A significant gender gap is observed in the probability of employment of the respondents both in IDP and hosts communities. IDP men are 14% more likely to be employed on average than IDP women. The gender gap is very similar in host communities with a 13% gap. IDPs with lower levels of education are more vulnerable and having secondary education and above increases the probability of employment by 10% on average.
+            IDP children’s lives are also majorly impacted, especially as displacement has a strong effect on the continuity of their education.
+            {' '}
+            <span className='bold'>Over 61% of IDP children experienced breaks in education due to displacement</span>
+            . Compared to hosts’ children with similar characteristics, children of IDPs are on average 28% more likely to have stopped going to school at some point. Children with many siblings are the most at risk: an internally displaced child with no siblings has a 54% probability of experiencing breaks in education compared to a 65% probability if he or she has three siblings. On the contrary, no major differences are observed between the probability of boys and girls to have experienced breaks in education.   As a result, compared to members of the host community, IDP households were on average, 14% less likely to have at least one member employed at the time of survey. This is true in households of both women and men-respondents. A significant gender gap is observed in the probability of employment of the respondents both in IDP and hosts communities. IDP men are 14% more likely to be employed on average than IDP women. The gender gap is very similar in host communities with a 13% gap. IDPs with lower levels of education are more vulnerable and having secondary education and above increases the probability of employment by 10% on average.
           </p>
         </DivEl>
         <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
@@ -109,7 +112,12 @@ export const EducationEl = () => {
         </DivEl>
         <DivEl width='calc(50% - 1rem)'>
           <p className='undp-typography'>
-            However, IDP parents appear successful in getting their children back into the education system as no significant difference in attendance was found between hosts and IDPs at time of the survey. However, in both groups, girls are 8% less likely to be attending school. IDP girls who experienced breaks in education have the lowest attendance rate of all: 16% of them were out of school at the time of the survey.
+            <span className='bold'>However, IDP parents appear successful in getting their children back into the education system</span>
+            {' '}
+            as no significant difference in attendance was found between hosts and IDPs at time of the survey. However, in both groups,
+            {' '}
+            <span className='bold'>girls are 8% less likely to be attending school</span>
+            . IDP girls who experienced breaks in education have the lowest attendance rate of all: 16% of them were out of school at the time of the survey.
           </p>
         </DivEl>
       </div>

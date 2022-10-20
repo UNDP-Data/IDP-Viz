@@ -53,10 +53,17 @@ export const HealthEl = () => {
       <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
         <DivEl width='calc(50% - 1rem)'>
           <p className='undp-typography'>
-            The effects of displacement are not solely felt in the professional lives of IDPs, as 31% of IDPs reported that their health worsened compared to before they left home. Compared to hosts with similar characteristics, IDPs are 12% more likely to have experienced a physical health decline after displacement happened. Among IDPs, men and women have the same probability of experiencing a decline in health.
+            <span className='bold'>IDPs and their children have trouble accessing public services such as health care and education leading to adverse social outcomes.</span>
             <br />
             <br />
-            Healthcare access after displacement appears to be a strong aggravating factor in the probability of experiencing a health decline. On average, a decrease in healthcare access increases the probability of a health decline by 26%, independent of the IDP status and the sex. However, IDPs experience this decline in health care access more strongly than hosts.  As a result, over half of the IDP women who are faced with poorer access to health care services after displacement are expected to see their health deteriorate.
+            The effects of displacement are not solely felt in the professional lives of IDPs, as 31% of IDPs reported that their health worsened compared to before they left home. Compared to hosts with similar characteristics,
+            {' '}
+            <span className='bold'>IDPs are 12% more likely to have experienced a physical health decline after displacement happened</span>
+            . Among IDPs, men and women have the same probability of experiencing a decline in health.
+            <br />
+            <br />
+            <span className='bold'>Healthcare access after displacement appears to be a strong aggravating factor in the probability of experiencing a health decline</span>
+            . On average, a decrease in healthcare access increases the probability of a health decline by 26%, independent of the IDP status and the sex. However, IDPs experience this decline in health care access more strongly than hosts.  As a result, over half of the IDP women who are faced with poorer access to health care services after displacement are expected to see their health deteriorate.
           </p>
         </DivEl>
         <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>

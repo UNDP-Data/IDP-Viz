@@ -52,7 +52,17 @@ export const EmployementEl = () => {
       <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
         <DivEl width='calc(50% - 1rem)'>
           <p className='undp-typography'>
-            Survey data highlight the major disruption in professional lives experienced by IDPs as 30% of them report falling into unemployment following displacement.  As a result, compared to members of the host community, IDP households were on average, 14% less likely to have at least one member employed at the time of survey. This is true in households of both women and men-respondents. A significant gender gap is observed in the probability of employment of the respondents both in IDP and hosts communities. IDP men are 14% more likely to be employed on average than IDP women. The gender gap is very similar in host communities with a 13% gap. IDPs with lower levels of education are more vulnerable and having secondary education and above increases the probability of employment by 10% on average.
+            Survey data highlight the major disruption in professional lives experienced by IDPs as 30% of them report falling into unemployment following displacement.  As a result,
+            {' '}
+            <span className='bold'>compared to members of the host community, IDP households were on average, 14% less likely to have at least one member employed at the time of survey</span>
+            . This is true in households of both women and men-respondents.
+            {' '}
+            <span className='bold'>A significant gender gap is observed in the probability of employment of the respondents both in IDP and hosts communities</span>
+            . IDP men are 14% more likely to be employed on average than IDP women. The gender gap is very similar in host communities with a 13% gap.
+            {' '}
+            <span className='bold'>IDPs with lower levels of education are more vulnerable</span>
+            {' '}
+            and having secondary education and above increases the probability of employment by 10% on average.
           </p>
         </DivEl>
         <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>

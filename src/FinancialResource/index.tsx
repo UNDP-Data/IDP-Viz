@@ -46,7 +46,13 @@ export const FinancialResourceEl = () => (
     <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
       <DivEl width='calc(50% - 1rem)'>
         <p className='undp-typography'>
-          IDPs incomes and financial resources are strongly impacted by the experience of displacement. 48% of IDPs report earning a lower income at time of survey than they did before moving. IDPs who fell into unemployment and those who could not earn money the same way as before are the most affected. As a result, 68% of IDPs report not having enough financial resources to meet their households’ needs. Households where at least one person is employed are 8% more likely of having sufficient financial resources. However, when looking at IDPs specifically, this effect is not statistically significant. Larger households, with more children, are less likely than the others to have enough financial resources to everyone’s needs. Similar probability of employment and similar probabilities of having enough financial resources are found amongst the newly displaced and those that had been displaced for several years.
+          IDPs incomes and financial resources are strongly impacted by the experience of displacement. 48% of IDPs report earning a lower income at time of survey than they did before moving. IDPs who fell into unemployment and those who could not earn money the same way as before are the most affected. As a result,
+          {' '}
+          <span className='bold'>68% of IDPs report not having enough financial resources to meet their households’ needs</span>
+          . Households where at least one person is employed are 8% more likely of having sufficient financial resources. However, when looking at IDPs specifically, this effect is not statistically significant. Larger households, with more children, are less likely than the others to have enough financial resources to everyone’s needs.
+          {' '}
+          <span className='bold'>Similar probability of employment and similar probabilities of having enough financial resources are found amongst the newly displaced and those that had been displaced for several years</span>
+          .
         </p>
       </DivEl>
       <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
