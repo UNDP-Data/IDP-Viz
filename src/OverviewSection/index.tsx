@@ -82,18 +82,21 @@ export const OverviewEl = () => (
           </p>
         </DivEl>
         <DivEl width='calc(66.66% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+          <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
+            Times and duration of displacement
+          </h6>
           <StackedBarGraph
             data={[
-              [19.37, 8.6, 5.61],
-              [6.51, 16.98, 3.52],
-              [1.35, 4.26, 6.21],
-              [3.29, 6.21, 2.17],
+              [0, 1, 0],
+              [2, 11, 15],
+              [9, 20, 33],
+              [0, 3, 0],
             ]}
             startingPos={[
-              [0, 19.37, 27.97],
-              [0, 6.51, 23.49],
-              [0, 1.35, 5.61],
-              [0, 3.29, 9.5],
+              [0, 0, 1],
+              [0, 2, 13],
+              [0, 9, 29],
+              [0, 0, 3],
             ]}
             barLabel={
               [
@@ -103,7 +106,7 @@ export const OverviewEl = () => (
                 '3 years',
               ]
             }
-            maxValue={40}
+            maxValue={70}
             marginLeft={100}
             color={['#6BABEB', '#3288CE', '#1F5A95']}
             colorKey={
@@ -113,22 +116,22 @@ export const OverviewEl = () => (
                 'More than twice',
               ]
             }
-            ticks={[0, 10, 20, 30, 40]}
+            ticks={[0, 10, 20, 30, 40, 50, 60, 70]}
           />
         </DivEl>
       </div>
     </div>
     <div className='flex-wrap flex-div max-width margin-bottom-09 flex-space-between' style={{ alignItems: 'stretch' }}>
       <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
-        <h2>35%</h2>
+        <h2>9%</h2>
         <p>People in host communities were hosting IDPs at the time of the survey</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
-        <h2>11.67%</h2>
+        <h2>3.33%</h2>
         <p>People in host communities were were hosting 5 IDPs or more</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
-        <h2>79%</h2>
+        <h2>69%</h2>
         <p>IDPs living with hosts were part of their close circle</p>
       </CardEl>
     </div>
