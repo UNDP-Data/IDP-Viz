@@ -88,28 +88,19 @@ export const OverviewEl = () => (
               [6.51, 16.98, 3.52],
               [1.35, 4.26, 6.21],
               [3.29, 6.21, 2.17],
-              [9.27, 0.6, 0.3],
-              [2.54, 2.47, 0.15],
-              [0.36, 0.22, 0],
             ]}
             startingPos={[
               [0, 19.37, 27.97],
               [0, 6.51, 23.49],
               [0, 1.35, 5.61],
               [0, 3.29, 9.5],
-              [0, 9.27, 9.87],
-              [0, 2.54, 5.01],
-              [0, 0.36, 0.58],
             ]}
             barLabel={
               [
-                'Conflict, voilence\nor insecurity',
-                'Flood',
-                'Droughts',
-                'Earthquakes',
-                'Sea level rising',
-                'Volcanic\neruptions',
-                'Others',
+                '0 years',
+                '1 year',
+                '2 years',
+                '3 years',
               ]
             }
             maxValue={40}
