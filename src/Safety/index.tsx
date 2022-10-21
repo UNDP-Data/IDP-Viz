@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { DumbellChartGender } from '../Graphs/DumbellChartGender';
+import { DumbellChartGenderForSafety } from '../Graphs/DumbellChartGenderForSafety';
 import '../style/checkboxStyle.css';
 import '../style/statCardStyle.css';
 
@@ -32,17 +32,24 @@ export const SafetyEl = () => (
       <DivEl>
         <p className='undp-typography'>
           <span className='bold'>90% of IDPs report feeling equally safe or safer in their host community than they did at home</span>
+          {' '}
           . This is 11 percentage points more than hosts with similar characteristics. This can be attributed to the effect of leaving danger zones. However, women who live in shelters remain particularly insecure as they only have a 59% probability of feeling equally safe or safer following displacement.
         </p>
       </DivEl>
       <DivEl className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
-          Probability for IDPs to feel equally safe or safer than before based on housing situation (higher is better)
+          Probability for IDPs to feel equally safe or safer than before (higher is better)
         </h6>
         <p className='margin-bottom-07 bold undp-typography'>
           Women living in shelter feel much less safe than the other IDPs living in other types of accomodation
         </p>
         <div className='flex-div' style={{ fontSize: '0.875rem' }}>
+          <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <ColorBox color='var(--gray-600)' />
+            <div>
+              All
+            </div>
+          </div>
           <div className='flex-div flex-vert-align-center flex-gap-02'>
             <ColorBox color='var(--men-highlight)' />
             <div>
@@ -56,10 +63,10 @@ export const SafetyEl = () => (
             </div>
           </div>
         </div>
-        <DumbellChartGender
+        <DumbellChartGenderForSafety
           maxValue={1}
-          data={[[0.82, 0.78], [0.8, 0.81], [0.69, 0.43]]}
-          titles={['Own or Rent Homes', 'Live in a House Free of Charge', 'Live in a Shelter']}
+          data={[[0.9, 0.9, 0.9], [0.86, 0.81, -1], [0.68, -1, 0.59]]}
+          titles={['Own or Rent Hous', 'Lives in home free of charge', 'Lives in shelter']}
           labelSuffix=''
         />
       </DivEl>

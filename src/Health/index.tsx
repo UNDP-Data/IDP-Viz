@@ -41,29 +41,19 @@ export const HealthEl = () => {
   return (
     <div>
       <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
-        <CardEl className='stat-card' width='calc(50% - 1rem)'>
-          <h2>1 out of 3</h2>
-          <p>IDPs report their health worsened after displacement</p>
-        </CardEl>
-        <CardEl className='stat-card' width='calc(50% - 1rem)'>
-          <h2>12%</h2>
-          <p>More likely to IDPs experienced a physical health decline than hosts</p>
+        <CardEl className='stat-card' width='100%'>
+          <h2>98%</h2>
+          <p>IDPs report their health is equal or better after moving</p>
         </CardEl>
       </div>
       <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
         <DivEl width='calc(50% - 1rem)'>
           <p className='undp-typography'>
-            <span className='bold'>IDPs and their children have trouble accessing public services such as health care and education leading to adverse social outcomes.</span>
+            <span className='bold'>IDPs’ physical health was mostly unaffected by the displacement</span>
+            . A majority of IDPs surveyed report that their physical health is equal or better after moving (84% equal, 14% better) and no difference is observed between the physical health of IDPs and hosts.
             <br />
             <br />
-            The effects of displacement are not solely felt in the professional lives of IDPs, as 31% of IDPs reported that their health worsened compared to before they left home. Compared to hosts with similar characteristics,
-            {' '}
-            <span className='bold'>IDPs are 12% more likely to have experienced a physical health decline after displacement happened</span>
-            . Among IDPs, men and women have the same probability of experiencing a decline in health.
-            <br />
-            <br />
-            <span className='bold'>Healthcare access after displacement appears to be a strong aggravating factor in the probability of experiencing a health decline</span>
-            . On average, a decrease in healthcare access increases the probability of a health decline by 26%, independent of the IDP status and the sex. However, IDPs experience this decline in health care access more strongly than hosts.  As a result, over half of the IDP women who are faced with poorer access to health care services after displacement are expected to see their health deteriorate.
+            This is true for both men and women. For the 30% of IDPs who report that they had a better access to healthcare at home, the probability of a physical health decline is 14 percentage points higher on average. Still, the effect on hosts is also very similar.
           </p>
         </DivEl>
         <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
@@ -89,7 +79,7 @@ export const HealthEl = () => {
           </div>
           <DumbellChart
             maxValue={1}
-            data={[[0.18, 0.3], [0.16, 0.28], [0.19, 0.31]]}
+            data={[[0.16, 0.14], [0.15, 0.09], [0.16, 0.18]]}
             titles={['All', 'Men', 'Women']}
             labelSuffix=''
             marks={['Host', 'IDP']}

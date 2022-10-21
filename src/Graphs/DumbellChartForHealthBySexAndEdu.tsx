@@ -22,26 +22,26 @@ export const DumbellChartForHealthBySexAndEdu = (props: Props) => {
   const data = {
     host: {
       same: {
-        all: 0.12,
-        men: 0.09,
-        women: 0.13,
+        all: 0.11,
+        men: 0.12,
+        women: 0.1,
       },
       worsened: {
-        all: 0.39,
-        men: 0.35,
-        women: 0.43,
+        all: 0.26,
+        men: 0.23,
+        women: 0.3,
       },
     },
     idp: {
       same: {
-        all: 0.24,
-        men: 0.22,
-        women: 0.26,
+        all: 0.09,
+        men: 0.08,
+        women: 0.1,
       },
       worsened: {
-        all: 0.5,
-        men: 0.49,
-        women: 0.51,
+        all: 0.23,
+        men: 0.11,
+        women: 0.34,
       },
     },
   };
