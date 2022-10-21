@@ -84,37 +84,34 @@ export const OverviewEl = () => (
           </p>
         </DivEl>
         <DivEl width='calc(66.66% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+          <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
+            Times and duration of displacement
+          </h6>
           <StackedBarGraph
             data={[
-              [19.37, 8.6, 5.61],
-              [6.51, 16.98, 3.52],
-              [1.35, 4.26, 6.21],
-              [3.29, 6.21, 2.17],
-              [9.27, 0.6, 0.3],
-              [2.54, 2.47, 0.15],
-              [0.36, 0.22, 0],
+              [0, 0, 0],
+              [0, 0, 0],
+              [43, 3, 0],
+              [44, 2, 1],
+              [5, 1, 1],
             ]}
             startingPos={[
-              [0, 19.37, 27.97],
-              [0, 6.51, 23.49],
-              [0, 1.35, 5.61],
-              [0, 3.29, 9.5],
-              [0, 9.27, 9.87],
-              [0, 2.54, 5.01],
-              [0, 0.36, 0.58],
+              [0, 0, 0],
+              [0, 0, 0],
+              [0, 43, 46],
+              [0, 44, 46],
+              [0, 5, 6],
             ]}
             barLabel={
               [
-                'Conflict, voilence\nor insecurity',
-                'Flood',
-                'Droughts',
-                'Earthquakes',
-                'Sea level rising',
-                'Volcanic\neruptions',
-                'Others',
+                '0 years',
+                '1 year',
+                '2 years',
+                '3 years',
+                '4 years',
               ]
             }
-            maxValue={40}
+            maxValue={50}
             marginLeft={100}
             color={['#6BABEB', '#3288CE', '#1F5A95']}
             colorKey={
@@ -124,7 +121,7 @@ export const OverviewEl = () => (
                 'More than twice',
               ]
             }
-            ticks={[0, 10, 20, 30, 40]}
+            ticks={[0, 10, 20, 30, 40, 50]}
           />
         </DivEl>
       </div>

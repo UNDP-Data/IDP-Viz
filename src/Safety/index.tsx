@@ -31,8 +31,8 @@ export const SafetyEl = () => (
     <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
       <DivEl>
         <p className='undp-typography'>
-          <span className='bold'>While the majority of IDPs, now feel equally safe or safer than before, IDP women living in shelters remain largely unsafe</span>
-          .  After displacement, no significant difference in the safety feeling of IDPs and hosts and across sexes. However, 3% of IDPs in the sample live in either collective or make-shift shelters. For these IDPs, the probability of feeling equally safe or safer now than before they left home is 18% less than for IDPs living either in their homes or with someone else. Women are especially vulnerable as they only have a 43% probability of feeling equally safe or safer if they live in a shelter. In comparison, the probability is 78% for women living in a home they own or rent.
+          <span className='bold'>90% of IDPs report feeling equally safe or safer in their host community than they did at home</span>
+          . This is 11 percentage points more than hosts with similar characteristics. This can be attributed to the effect of leaving danger zones. However, women who live in shelters remain particularly insecure as they only have a 59% probability of feeling equally safe or safer following displacement.
         </p>
       </DivEl>
       <DivEl className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
