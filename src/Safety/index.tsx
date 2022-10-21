@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { DumbellChartGender } from '../Graphs/DumbellChartGender';
+import { DumbellChart } from '../Graphs/DumbellChart';
 import '../style/checkboxStyle.css';
 import '../style/statCardStyle.css';
 
@@ -37,30 +37,29 @@ export const SafetyEl = () => (
       </DivEl>
       <DivEl className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
-          Probability of feeling equally safe or safer (higher is better)
+          Probability for IDPs to feel equally safe or safer than before (higher is better)
         </h6>
-        <p className='margin-bottom-07 bold undp-typography'>
-          Women living in shelter feel much less safe than the other IDPs living in other types of accomodation
-        </p>
         <div className='flex-div' style={{ fontSize: '0.875rem' }}>
           <div className='flex-div flex-vert-align-center flex-gap-02'>
-            <ColorBox color='var(--men-highlight)' />
+            <ColorBox />
             <div>
-              Men
+              IDPs
             </div>
           </div>
           <div className='flex-div flex-vert-align-center flex-gap-02'>
-            <ColorBox color='var(--women-highlight)' />
+            <ColorBox radius='20px' />
             <div>
-              Women
+              Host
             </div>
           </div>
         </div>
-        <DumbellChartGender
+        <DumbellChart
+          minWidth={1280}
           maxValue={1}
-          data={[[0.89, 0.79], [0.91, 0.9]]}
-          titles={['IDPs', 'Host']}
+          data={[[0.91, 0.84], [0.91, 0.89], [0.9, 0.79]]}
+          titles={['All', 'Men', 'Women']}
           labelSuffix=''
+          marks={['Host', 'IDP']}
         />
       </DivEl>
     </div>
