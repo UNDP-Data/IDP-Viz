@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { DumbellChartGender } from '../Graphs/DumbellChartGender';
+import { DumbellChart } from '../Graphs/DumbellChart';
 import '../style/checkboxStyle.css';
 import '../style/statCardStyle.css';
 
@@ -57,11 +57,13 @@ export const SafetyEl = () => (
             </div>
           </div>
         </div>
-        <DumbellChartGender
+        <DumbellChart
           maxValue={1}
-          data={[[0.74, 0.65], [0.93, 0.94]]}
-          titles={['IDPs', 'Host']}
+          minWidth={1280}
+          data={[[0.93, 0.69], [0.93, 0.74], [0.94, 0.65]]}
+          titles={['All', 'Men', 'Women']}
           labelSuffix=''
+          marks={['Host', 'IDP']}
         />
       </DivEl>
     </div>
