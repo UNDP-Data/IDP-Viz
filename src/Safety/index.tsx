@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { DumbellChartGender } from '../Graphs/DumbellChartGender';
+import { DumbellChart } from '../Graphs/DumbellChart';
 import '../style/checkboxStyle.css';
 import '../style/statCardStyle.css';
 
@@ -41,23 +41,25 @@ export const SafetyEl = () => (
         </h6>
         <div className='flex-div' style={{ fontSize: '0.875rem' }}>
           <div className='flex-div flex-vert-align-center flex-gap-02'>
-            <ColorBox color='var(--men-highlight)' />
+            <ColorBox />
             <div>
-              Men
+              IDPs
             </div>
           </div>
           <div className='flex-div flex-vert-align-center flex-gap-02'>
-            <ColorBox color='var(--women-highlight)' />
+            <ColorBox radius='20px' />
             <div>
-              Women
+              Host
             </div>
           </div>
         </div>
-        <DumbellChartGender
+        <DumbellChart
           maxValue={1}
-          data={[[0.78, 0.8], [0.94, 0.95]]}
-          titles={['Host', 'IDPs']}
+          minWidth={1280}
+          data={[[0.79, 0.94], [0.78, 0.94], [0.8, 0.95]]}
+          titles={['All', 'Men', 'Women']}
           labelSuffix=''
+          marks={['Host', 'IDP']}
         />
       </DivEl>
     </div>
