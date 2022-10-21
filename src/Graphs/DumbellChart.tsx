@@ -6,6 +6,7 @@ interface Props {
   maxValue: number;
   labelSuffix: string;
   marks: [string, string];
+  minWidth?: number
 }
 
 const El = styled.div`
@@ -15,9 +16,9 @@ const El = styled.div`
 
 export const DumbellChart = (props: Props) => {
   const {
-    data, titles, maxValue, labelSuffix, marks,
+    data, titles, maxValue, labelSuffix, marks, minWidth,
   } = props;
-  const svgWidth = Math.min(window.innerWidth, 620);
+  const svgWidth = Math.min(window.innerWidth, minWidth || 620);
   const svgHeight = 70 * (titles.length - 1) + 50;
   return (
     <El>
