@@ -31,8 +31,8 @@ export const SafetyEl = () => (
     <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
       <DivEl>
         <p className='undp-typography'>
-          <span className='bold'>While the majority of IDPs, now feel equally safe or safer than before, IDP women living in shelters remain largely unsafe</span>
-          .  After displacement, no significant difference in the safety feeling of IDPs and hosts and across sexes. However, 3% of IDPs in the sample live in either collective or make-shift shelters. For these IDPs, the probability of feeling equally safe or safer now than before they left home is 18% less than for IDPs living either in their homes or with someone else. Women are especially vulnerable as they only have a 43% probability of feeling equally safe or safer if they live in a shelter. In comparison, the probability is 78% for women living in a home they own or rent.
+          <span className='bold'>After moving away from conflict and violence, 58% of IDPs report feeling safer now than they did at home</span>
+          . Indeed, at the time of survey, no significant difference is found in the safety feeling of IDPs and hosts and this is observed for both men and women.
         </p>
       </DivEl>
       <DivEl className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
@@ -58,8 +58,8 @@ export const SafetyEl = () => (
         </div>
         <DumbellChartGender
           maxValue={1}
-          data={[[0.82, 0.78], [0.8, 0.81], [0.69, 0.43]]}
-          titles={['Own or Rent Homes', 'Live in a House Free of Charge', 'Live in a Shelter']}
+          data={[[0.89, 0.85], [0.79, 0.85]]}
+          titles={['IDPs', 'Hosts']}
           labelSuffix=''
         />
       </DivEl>

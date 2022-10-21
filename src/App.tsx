@@ -5,7 +5,6 @@ import './style/antd.css';
 import './style/style.css';
 import './style/segmentedStyle.css';
 import { EmployementEl } from './Employement';
-import { FinancialResourceEl } from './FinancialResource';
 import { HealthEl } from './Health';
 import { SafetyEl } from './Safety';
 import { EducationEl } from './Education';
@@ -30,10 +29,6 @@ const App = () => {
                   value: 'employment',
                 },
                 {
-                  label: 'Financial Resources',
-                  value: 'finacialResources',
-                },
-                {
                   label: 'Health',
                   value: 'health',
                 },
@@ -54,9 +49,6 @@ const App = () => {
         }
         {
           selectedSection === 'employment' ? <EmployementEl /> : null
-        }
-        {
-          selectedSection === 'finacialResources' ? <FinancialResourceEl /> : null
         }
         {
           selectedSection === 'health' ? <HealthEl /> : null
