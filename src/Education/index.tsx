@@ -4,9 +4,8 @@ import { useState } from 'react';
 import { DumbellChart } from '../Graphs/DumbellChart';
 import '../style/checkboxStyle.css';
 import '../style/statCardStyle.css';
-import { SingleLineChart } from '../Graphs/SingleLineChart';
-import { DumbellChartBySexAndBreaks } from '../Graphs/DumbellChartBySexAndBreaks';
 import '../style/radioStyle.css';
+import { LineChart } from '../Graphs/LineChart';
 
 interface WidthProps {
   width?: string;
@@ -41,21 +40,22 @@ export const EducationEl = () => {
     <div>
       <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
         <CardEl className='stat-card' width='calc(50% - 1rem)'>
-          <h2>2 out of 5</h2>
+          <h2>4 out of 5</h2>
           <p>IDP children experienced breaks in education due to displacement</p>
         </CardEl>
         <CardEl className='stat-card' width='calc(50% - 1rem)'>
-          <h2>28%</h2>
+          <h2>58%</h2>
           <p>more likely IDP children stopped going to school compared to host</p>
         </CardEl>
       </div>
       <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
         <DivEl width='calc(50% - 1rem)'>
           <p className='undp-typography'>
-            IDP children’s lives are also majorly impacted, especially as displacement has a strong effect on the continuity of their education.
+            <span className='bold'>IDP children’s lives are also majorly impacted, especially as displacement has a strong effect on the continuity of their education</span>
+            . Before displacement, IDPs’ attendance rate (95%) was a slightly smaller than the one of host (98%), driven by the difference among girls.
             {' '}
-            <span className='bold'>Over 61% of IDP children experienced breaks in education due to displacement</span>
-            . Compared to hosts’ children with similar characteristics, children of IDPs are on average 28% more likely to have stopped going to school at some point. Children with many siblings are the most at risk: an internally displaced child with no siblings has a 54% probability of experiencing breaks in education compared to a 65% probability if he or she has three siblings. On the contrary, no major differences are observed between the probability of boys and girls to have experienced breaks in education.   As a result, compared to members of the host community, IDP households were on average, 14% less likely to have at least one member employed at the time of survey. This is true in households of both women and men-respondents. A significant gender gap is observed in the probability of employment of the respondents both in IDP and hosts communities. IDP men are 14% more likely to be employed on average than IDP women. The gender gap is very similar in host communities with a 13% gap. IDPs with lower levels of education are more vulnerable and having secondary education and above increases the probability of employment by 10% on average.
+            <span className='bold'>Over 77% of IDP children experienced breaks in education due to displacement</span>
+            . Compared to hosts’ children with similar characteristics, children of IDPs are on average 58% more likely to have stopped going to school at some point. On average, no major differences are observed between the probability of boys and girls to have experienced breaks in education. However, for both sexes and for both IDPs and hosts, children with many siblings are the most at risk.
           </p>
         </DivEl>
         <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
@@ -78,7 +78,7 @@ export const EducationEl = () => {
           </div>
           <DumbellChart
             maxValue={1}
-            data={[[0.35, 0.63], [0.38, 0.65], [0.31, 0.61]]}
+            data={[[0.16, 0.74], [0.18, 0.77], [0.14, 0.72]]}
             titles={['All', 'Boys', 'Girls']}
             labelSuffix=''
             marks={['Host', 'IDP']}
@@ -106,39 +106,21 @@ export const EducationEl = () => {
           </div>
           <DumbellChart
             maxValue={1}
-            data={[[0.93, 0.91], [0.96, 0.94], [0.9, 0.87]]}
-            titles={['All', 'Boys', 'Girls']}
+            data={[[0.94, 0.89]]}
+            titles={['All']}
             labelSuffix=''
             marks={['Host', 'IDP']}
           />
         </DivEl>
         <DivEl width='calc(50% - 1rem)'>
           <p className='undp-typography'>
-            <span className='bold'>However, IDP parents appear successful in getting their children back into the education system</span>
+            However, at time of survey, IDP children are just as likely to be attending school as hosts’ children suggesting that
             {' '}
-            as no significant difference in attendance was found between hosts and IDPs at time of the survey. However, in both groups,
+            <span className='bold'>IDP parents are successful in getting their children back to school</span>
             {' '}
-            <span className='bold'>girls are 8% less likely to be attending school</span>
-            . IDP girls who experienced breaks in education have the lowest attendance rate of all: 16% of them were out of school at the time of the survey.
+            and that although IDP children are numerous to experience breaks, almost none of them drop out of school as a result. Those who did appear to be the oldest IDP girls.
           </p>
         </DivEl>
-      </div>
-      <div className='max-width'>
-        <div className='max-width'>
-          <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
-            Changes in Probablity of Attending School with Time
-          </h6>
-          <p className='italics margin-bottom-07 margin-top-07 undp-typography'>
-            The probablity of employment and financial situation of IDP households improves after several year of settlement
-          </p>
-          <SingleLineChart
-            xRange={[0, 10]}
-            maxY={1.1}
-            data={[0.88, 0.89, 0.9, 0.91, 0.91, 0.92, 0.93, 0.93, 0.93, 0.94, 0.94]}
-            yTicks={[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]}
-            xTicks={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
-          />
-        </div>
       </div>
       <div className='max-width'>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
@@ -147,40 +129,52 @@ export const EducationEl = () => {
         <div className='flex-div flex-space-between'>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
             <div className='flex-div flex-vert-align-center flex-gap-02'>
-              <ColorBox />
+              <ColorBox color='var(--dark-green)' />
               <div>
-                IDPs
+                IDP
               </div>
             </div>
             <div className='flex-div flex-vert-align-center flex-gap-02'>
-              <ColorBox radius='20px' />
+              <ColorBox color='var(--blue-500)' />
               <div>
                 Host
-              </div>
-            </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
-              <ColorBox color='var(--men-highlight)' />
-              <div>
-                Break
-              </div>
-            </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
-              <ColorBox color='var(--women-highlight)' />
-              <div>
-                No Break
               </div>
             </div>
           </div>
           <div className='flex-div'>
             <Radio.Group defaultValue={1}>
-              <Radio className='undp-radio' onChange={(e) => { setSelected(e.target.value); }} value={1}>IDPs</Radio>
-              <Radio className='undp-radio' onChange={(e) => { setSelected(e.target.value); }} value={2}>Hosts</Radio>
+              <Radio className='undp-radio' onChange={(e) => { setSelected(e.target.value); }} value={1}>Boys</Radio>
+              <Radio className='undp-radio' onChange={(e) => { setSelected(e.target.value); }} value={2}>Girls</Radio>
             </Radio.Group>
           </div>
         </div>
-        <DumbellChartBySexAndBreaks
-          selected={selected}
-        />
+        {
+          selected === 1
+            ? (
+              <LineChart
+                xRange={[0, 11]}
+                maxY={1.1}
+                data={[
+                  [0.98, 0.98, 0.97, 0.97, 0.97, 0.97, 0.96, 0.96, 0.95, 0.95, 0.94, 0.94],
+                  [1, 1, 1, 0.99, 0.99, 0.99, 0.98, 0.96, 0.94, 0.91, 0.88, 0.82],
+                ]}
+                yTicks={[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]}
+                xTicks={[6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]}
+              />
+            )
+            : (
+              <LineChart
+                xRange={[0, 11]}
+                maxY={1.1}
+                data={[
+                  [1, 1, 0.99, 0.99, 0.98, 0.98, 0.96, 0.94, 0.91, 0.87, 0.82, 0.76],
+                  [0.99, 0.98, 0.98, 0.96, 0.95, 0.93, 0.9, 0.86, 0.82, 0.77, 0.71, 0.65],
+                ]}
+                yTicks={[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]}
+                xTicks={[6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]}
+              />
+            )
+        }
       </div>
     </div>
   );

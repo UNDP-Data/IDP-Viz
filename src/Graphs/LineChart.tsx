@@ -67,7 +67,7 @@ export const LineChart = (props: Props) => {
               transform='translate(15, 0)'
             >
               <text
-                x={(d * svgWidth) / (xRange[1] - xRange[0])}
+                x={(i * svgWidth) / (xRange[1] - xRange[0])}
                 y={svgHeight}
                 fill='#000'
                 opacity={1}
