@@ -37,7 +37,7 @@ export const SafetyEl = () => (
       </DivEl>
       <DivEl className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
-          Probability for IDPs to feel equally safe or safer than before based on housing situation (higher is better)
+          Probability for IDPs to feel equally safe or safer than before (higher is better)
         </h6>
         <div className='flex-div' style={{ fontSize: '0.875rem' }}>
           <div className='flex-div flex-vert-align-center flex-gap-02'>
