@@ -69,7 +69,7 @@ export const HealthEl = () => (
         </div>
         <DumbellChart
           maxValue={1}
-          data={[[0.14, 0.27], [0.06, 0.28], [0.18, 0.36]]}
+          data={[[0.14, 0.27], [0.06, 0.23], [0.18, 0.36]]}
           titles={['All', 'Men', 'Women']}
           labelSuffix=''
           marks={['Host', 'IDP']}
