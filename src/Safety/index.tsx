@@ -66,7 +66,7 @@ export const SafetyEl = () => (
         <DumbellChartGenderForSafety
           maxValue={1}
           data={[[0.9, 0.9, 0.9], [0.86, 0.81, -1], [0.68, -1, 0.59]]}
-          titles={['Own or Rent Hous', 'Lives in home free of charge', 'Lives in shelter']}
+          titles={['Own or Rent House', 'Lives in home free of charge', 'Lives in shelter']}
           labelSuffix=''
         />
       </DivEl>
