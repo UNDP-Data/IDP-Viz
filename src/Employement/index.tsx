@@ -56,7 +56,7 @@ export const EmployementEl = () => {
         </DivEl>
         <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
           <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
-            Becomes Unemployed or Had to Earn in a Different Way (lower is better)
+            Share of respondents who report becoming unemployed or having to earn money in a different way after displacement (lower is better)
           </h6>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
             <div className='flex-div flex-vert-align-center flex-gap-02'>
