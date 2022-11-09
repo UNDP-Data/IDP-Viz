@@ -46,7 +46,7 @@ export const OverviewEl = () => (
       <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
         <BarContainer>
           <div>
-            IDP
+            IDPs
           </div>
           <BarEl style={{ width: '75.38%' }}>
             58%
@@ -54,7 +54,7 @@ export const OverviewEl = () => (
         </BarContainer>
         <BarContainer>
           <div>
-            Host
+            Hosts
           </div>
           <BarEl style={{ width: '100%' }}>
             79%
@@ -112,7 +112,7 @@ export const OverviewEl = () => (
                 '5 years',
               ]
             }
-            maxValue={30}
+            maxValue={40}
             marginLeft={100}
             color={['#6BABEB', '#3288CE', '#1F5A95']}
             colorKey={
@@ -122,7 +122,7 @@ export const OverviewEl = () => (
                 'More than twice',
               ]
             }
-            ticks={[0, 10, 20, 30]}
+            ticks={[0, 10, 20, 30, 40]}
           />
         </DivEl>
       </div>
@@ -133,7 +133,7 @@ export const OverviewEl = () => (
         <p>People in host communities were hosting IDPs at the time of the survey</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
-        <h2>5.5%</h2>
+        <h2>55%</h2>
         <p>People in host communities were were hosting 1 IDP</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
