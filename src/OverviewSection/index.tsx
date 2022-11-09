@@ -45,17 +45,17 @@ export const OverviewEl = () => (
       <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
         <BarContainer>
           <div>
-            IDP
+            IDPs
           </div>
-          <BarEl style={{ width: '75.38%' }}>
+          <BarEl style={{ width: '74%' }}>
             74%
           </BarEl>
         </BarContainer>
         <BarContainer>
           <div>
-            Host
+            Hosts
           </div>
-          <BarEl style={{ width: '100%' }}>
+          <BarEl style={{ width: '93%' }}>
             93%
           </BarEl>
         </BarContainer>
