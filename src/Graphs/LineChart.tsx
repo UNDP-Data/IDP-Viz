@@ -97,7 +97,7 @@ export const LineChart = (props: Props) => {
           dy={15}
           textAnchor='middle'
         >
-          Years since arrival in host community
+          Age of the child
         </text>
         <g transform='translate(15, 0)'>
           <path d={lineShape1(data[0] as any) as string} fill='none' stroke='#3288CE' strokeWidth={2} />

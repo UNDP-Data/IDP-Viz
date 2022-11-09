@@ -46,17 +46,17 @@ export const OverviewEl = () => (
       <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
         <BarContainer>
           <div>
-            IDP
+            IDPs
           </div>
-          <BarEl style={{ width: '75.38%' }}>
+          <BarEl style={{ width: '47%' }}>
             47%
           </BarEl>
         </BarContainer>
         <BarContainer>
           <div>
-            Host
+            Hosts
           </div>
-          <BarEl style={{ width: '100%' }}>
+          <BarEl style={{ width: '65%' }}>
             65%
           </BarEl>
         </BarContainer>
@@ -126,15 +126,15 @@ export const OverviewEl = () => (
     </div>
     <div className='flex-wrap flex-div max-width margin-bottom-09 flex-space-between' style={{ alignItems: 'stretch' }}>
       <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
-        <h2>10%</h2>
+        <h2>82%</h2>
         <p>People in host communities were hosting IDPs at the time of the survey</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
-        <h2>5.5%</h2>
-        <p>People in host communities were only 1 IDP</p>
+        <h2>68%</h2>
+        <p>People in host communities were hosting more than 5 IDPs</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
-        <h2>83%</h2>
+        <h2>49%</h2>
         <p>IDPs living with hosts were part of their close circle</p>
       </CardEl>
     </div>
