@@ -122,7 +122,7 @@ export const DumbellChart = (props: Props) => {
                     textAnchor={data[i][1] > data[i][0] ? 'start' : 'end'}
                     fontWeight='bold'
                   >
-                    {marks[1] !== 'No one employed' ? marks[0] : (
+                    {marks[1] !== 'No one employed' ? marks[1] : (
                       <>
                         <tspan x={0} dy={-2} dx={data[i][1] < data[i][0] ? -7 : 7}>No one</tspan>
                         <tspan x={0} dy={10} dx={data[i][1] < data[i][0] ? -7 : 7}>employed</tspan>
