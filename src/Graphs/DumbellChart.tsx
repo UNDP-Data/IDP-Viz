@@ -85,7 +85,12 @@ export const DumbellChart = (props: Props) => {
                     textAnchor={data[i][1] > data[i][0] ? 'end' : 'start'}
                     fontWeight='bold'
                   >
-                    {marks[0]}
+                    {marks[0] !== 'One member employed' ? marks[0] : (
+                      <>
+                        <tspan x={0} dy={-2} dx={data[i][1] > data[i][0] ? -7 : 7}>One member</tspan>
+                        <tspan x={0} dy={10} dx={data[i][1] > data[i][0] ? -7 : 7}>employed</tspan>
+                      </>
+                    )}
                   </text>
                 </g>
                 <g transform={`translate(${(svgWidth * data[i][1]) / maxValue},0)`}>
@@ -118,7 +123,12 @@ export const DumbellChart = (props: Props) => {
                     textAnchor={data[i][1] > data[i][0] ? 'start' : 'end'}
                     fontWeight='bold'
                   >
-                    {marks[1]}
+                    {marks[1] !== 'No one employed' ? marks[1] : (
+                      <>
+                        <tspan x={0} dy={-2} dx={data[i][1] < data[i][0] ? -7 : 7}>No one</tspan>
+                        <tspan x={0} dy={10} dx={data[i][1] < data[i][0] ? -7 : 7}>employed</tspan>
+                      </>
+                    )}
                   </text>
                 </g>
               </g>
