@@ -46,17 +46,17 @@ export const OverviewEl = () => (
       <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
         <BarContainer>
           <div>
-            IDP
+            IDPs
           </div>
-          <BarEl style={{ width: '75.38%' }}>
+          <BarEl style={{ width: '90%' }}>
             90%
           </BarEl>
         </BarContainer>
         <BarContainer>
           <div>
-            Host
+            Hosts
           </div>
-          <BarEl style={{ width: '100%' }}>
+          <BarEl style={{ width: '24%' }}>
             24%
           </BarEl>
         </BarContainer>
@@ -127,7 +127,7 @@ export const OverviewEl = () => (
         <p>People in host communities were hosting IDPs at the time of the survey</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
-        <h2>3.33%</h2>
+        <h2>3%</h2>
         <p>People in host communities were were hosting 5 IDPs or more</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>

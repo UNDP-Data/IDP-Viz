@@ -63,7 +63,7 @@ export const EducationEl = () => (
           <div className='flex-div flex-vert-align-center flex-gap-02'>
             <ColorBox radius='20px' />
             <div>
-              Host
+              Hosts
             </div>
           </div>
         </div>
@@ -91,7 +91,7 @@ export const EducationEl = () => (
           <div className='flex-div flex-vert-align-center flex-gap-02'>
             <ColorBox radius='20px' />
             <div>
-              Host
+              Hosts
             </div>
           </div>
         </div>
