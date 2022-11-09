@@ -19,7 +19,7 @@ export const DumbellChart = (props: Props) => {
     data, titles, maxValue, labelSuffix, marks, minWidth,
   } = props;
   const svgWidth = Math.min(window.innerWidth, minWidth || 620);
-  const svgHeight = 70 * (titles.length - 1) + 50;
+  const svgHeight = 70 * (titles.length - 1) + 60;
   return (
     <El>
       <svg width='100%' viewBox={`0 0 ${svgWidth} ${svgHeight}`}>
@@ -80,9 +80,8 @@ export const DumbellChart = (props: Props) => {
                     fontSize={10}
                     x={0}
                     y={0}
-                    dy={4}
-                    dx={data[i][1] > data[i][0] ? -7 : 7}
-                    textAnchor={data[i][1] > data[i][0] ? 'end' : 'start'}
+                    dy={14}
+                    textAnchor='middle'
                     fontWeight='bold'
                   >
                     {marks[0]}
@@ -113,9 +112,8 @@ export const DumbellChart = (props: Props) => {
                     fontSize={10}
                     x={0}
                     y={0}
-                    dy={4}
-                    dx={data[i][1] > data[i][0] ? 7 : -7}
-                    textAnchor={data[i][1] > data[i][0] ? 'start' : 'end'}
+                    dy={14}
+                    textAnchor='middle'
                     fontWeight='bold'
                   >
                     {marks[1]}

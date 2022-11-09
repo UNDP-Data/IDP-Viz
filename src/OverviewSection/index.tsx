@@ -88,7 +88,7 @@ export const OverviewEl = () => (
         <p>People in host communities were hosting IDPs at the time of the survey</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
-        <h2>22.4%</h2>
+        <h2>22%</h2>
         <p>People in host communities were were hosting 5 IDPs or more</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
