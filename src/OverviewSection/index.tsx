@@ -48,7 +48,7 @@ export const OverviewEl = () => (
           <div>
             IDPs
           </div>
-          <BarEl style={{ width: '75.38%' }}>
+          <BarEl style={{ width: '58%' }}>
             58%
           </BarEl>
         </BarContainer>
@@ -56,7 +56,7 @@ export const OverviewEl = () => (
           <div>
             Hosts
           </div>
-          <BarEl style={{ width: '100%' }}>
+          <BarEl style={{ width: '79%' }}>
             79%
           </BarEl>
         </BarContainer>
