@@ -40,23 +40,23 @@ export const OverviewEl = () => (
   <div>
     <div className='flex-wrap flex-div max-width margin-bottom-09 flex-space-between' style={{ alignItems: 'stretch' }}>
       <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
-        <h2>40</h2>
+        <h2>4036</h2>
         <p>Average age of IDP respondents</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
         <BarContainer>
           <div>
-            IDP
+            IDPs
           </div>
-          <BarEl style={{ width: '75.38%' }}>
+          <BarEl style={{ width: '33%' }}>
             11%
           </BarEl>
         </BarContainer>
         <BarContainer>
           <div>
-            Host
+            Hosts
           </div>
-          <BarEl style={{ width: '100%' }}>
+          <BarEl style={{ width: '15%' }}>
             5%
           </BarEl>
         </BarContainer>
@@ -103,7 +103,7 @@ export const OverviewEl = () => (
                 '2 years',
               ]
             }
-            maxValue={80}
+            maxValue={85}
             marginLeft={100}
             color={['#6BABEB', '#3288CE', '#1F5A95']}
             colorKey={
@@ -124,7 +124,7 @@ export const OverviewEl = () => (
         <p>People in host communities were hosting IDPs at the time of the survey</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
-        <h2>21.6%</h2>
+        <h2>22%</h2>
         <p>People in host communities were hosting 3 IDPs or less</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>

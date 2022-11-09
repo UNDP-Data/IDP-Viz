@@ -18,14 +18,14 @@ export const DumbellChart = (props: Props) => {
   const {
     data, titles, maxValue, labelSuffix, marks, minWidth,
   } = props;
-  const svgWidth = Math.min(window.innerWidth, minWidth || 620);
+  const svgWidth = Math.min(window.innerWidth, minWidth || 600);
   const svgHeight = 70 * (titles.length - 1) + 50;
   return (
     <El>
-      <svg width='100%' viewBox={`0 0 ${svgWidth} ${svgHeight}`}>
+      <svg width='100%' viewBox={`0 0 ${svgWidth + 20} ${svgHeight}`}>
         {
           titles.map((d, i) => (
-            <g transform={`translate(0,${i * 70})`} key={i}>
+            <g transform={`translate(5,${i * 70})`} key={i}>
               <text
                 fill='#000'
                 fontSize={14}
