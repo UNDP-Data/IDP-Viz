@@ -40,7 +40,7 @@ export const OverviewEl = () => (
   <div>
     <div className='flex-wrap flex-div max-width margin-bottom-09 flex-space-between' style={{ alignItems: 'stretch' }}>
       <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
-        <h2>4036</h2>
+        <h2>36</h2>
         <p>Average age of IDP respondents</p>
       </CardEl>
       <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
