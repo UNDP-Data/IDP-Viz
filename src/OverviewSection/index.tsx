@@ -80,7 +80,7 @@ export const OverviewEl = () => (
           <p className='undp-typography'>
             IDPs sampled moved for various reasons depending on which country they are from:
             {' '}
-            <span className='bold'>33% due to Conflict, violence or insecurity</span>
+            <span className='bold'>33% due to conflict, violence or insecurity</span>
             , the rest due to climate and meteorological causes among which
             {' '}
             <span className='bold'>floods (27 %), droughts (11.7%), earthquakes (11.6%), sea levels risings (10%) and others (volcanic eruptions, tsunami, landslides and cyclones)</span>
@@ -112,7 +112,7 @@ export const OverviewEl = () => (
             ]}
             barLabel={
               [
-                'Conflict, voilence\nor insecurity',
+                'Conflict, violence\nor insecurity',
                 'Flood',
                 'Droughts',
                 'Earthquakes',
