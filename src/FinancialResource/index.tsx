@@ -39,9 +39,6 @@ export const FinancialResourceEl = () => (
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probablity of having financial resource to meet the household needs (higher is better)
         </h6>
-        <p className='margin-bottom-07 bold undp-typography'>
-          Having at least one person employed in the household has no significant effect on the probablity that the IDPs have enough financial resources
-        </p>
         <div className='flex-div' style={{ fontSize: '0.875rem' }}>
           <div className='flex-div flex-vert-align-center flex-gap-02'>
             <ColorBox />
@@ -68,7 +65,7 @@ export const FinancialResourceEl = () => (
     <div className='max-width'>
       <div className='max-width'>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
-          Changes in Probablity of IDP household having atleast one member employed and Have Enough Financial Resources with Time
+          Changes in probablity of IDP household having atleast one member employed and have enough financial resources with time
         </h6>
         <p className='italics margin-bottom-07 margin-top-07 undp-typography'>
           The probablity of employment and financial situation of IDP households doesnt seem to improve with time
