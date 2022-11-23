@@ -92,7 +92,7 @@ export const FinancialResourceEl = () => (
     <div className='max-width'>
       <div className='max-width'>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
-          Changes in Probablity of IDP household having atleast one member employed and Have Enough Financial Resources with Time
+          Changes in Probablity of IDP household having at least one member employed and Have Enough Financial Resources with Time
         </h6>
         <p className='italics margin-bottom-07 margin-top-07 undp-typography'>
           The longer IDPs have been settled in their new location, the more their situation appears to improve.

@@ -47,7 +47,7 @@ export const HealthEl = () => {
         </CardEl>
         <CardEl className='stat-card' width='calc(50% - 1rem)'>
           <h2>21%</h2>
-          <p>More likely to IDPs experienced a physical health decline than hosts</p>
+          <p>More likely that IDPs experienced a physical health decline than hosts</p>
         </CardEl>
       </div>
       <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
@@ -71,7 +71,7 @@ export const HealthEl = () => {
             Probability of having experienced a health decline since displacement (lower is better)
           </h6>
           <p className='margin-bottom-07 bold undp-typography'>
-            Being an IDP is associated with on average a 21% higher probability of physical health decline after displacement. Among IDPs, no significant different in probability is observed for men and women.
+            Being an IDP is associated with on average a 21% higher probability of physical health decline after displacement. Among IDPs, no significant difference in probability is observed for men and women.
           </p>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
             <div className='flex-div flex-vert-align-center flex-gap-02'>
