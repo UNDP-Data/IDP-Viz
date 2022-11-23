@@ -35,7 +35,7 @@ export const FinancialResourceEl = () => (
     <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
       <CardEl className='stat-card' width='100%'>
         <h2>32%</h2>
-        <p>Less likely IDPs have enough sufficient financial resources to fulfil their household’s needs when copared to host at equal employment status and equal characteristics </p>
+        <p>Less likely IDPs have enough sufficient financial resources to fulfil their household’s needs when compared to host at equal employment status and equal characteristics</p>
       </CardEl>
     </div>
     <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
