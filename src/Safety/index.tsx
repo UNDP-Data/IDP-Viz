@@ -33,7 +33,7 @@ export const SafetyEl = () => (
         <p className='undp-typography'>
           <span className='bold'>IDPs are 24% less likely than hosts of feeling equally safe or safer after displacement</span>
           {' '}
-          happened and that this result is driven by women IDPs who feel 29% less safe than women hosts.
+          happened and this result is driven by women IDPs who feel 29% less safe than women hosts.
         </p>
       </DivEl>
       <DivEl className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>

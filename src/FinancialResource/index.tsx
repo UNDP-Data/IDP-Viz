@@ -88,7 +88,7 @@ export const FinancialResourceEl = () => (
           Changes in Probablity of IDP household having atleast one member employed and Have Enough Financial Resources with Time
         </h6>
         <p className='italics margin-bottom-07 margin-top-07 undp-typography'>
-          The probablity of employment and financial situation of IDP households doesnt seem to improve with time
+          The probability of employment and financial situation of IDP households doesnt seem to improve with time
         </p>
         <div className='flex-div'>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
