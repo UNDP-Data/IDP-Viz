@@ -71,7 +71,7 @@ export const HealthEl = () => {
             Probability of having experienced a health decline since displacement (lower is better)
           </h6>
           <p className='margin-bottom-07 bold undp-typography'>
-            Being an IDP is associated with on average a 21% higher probability of physical health decline after displacement. Among IDPs, no significant difference in probability is observed for men and women.
+            Being an IDP is associated with on average a 21% higher probability of physical health decline after displacement. Among IDPs, no significant difference in probability is observed between men and women.
           </p>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
             <div className='flex-div flex-vert-align-center flex-gap-02'>
