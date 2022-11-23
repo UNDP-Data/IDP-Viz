@@ -42,7 +42,7 @@ export const FinancialResourceEl = () => (
           Probablity of having financial resource to meet the household needs (higher is better)
         </h6>
         <p className='margin-bottom-07 bold undp-typography'>
-          Having at least one person employed in the household has no significant effect on the probablity that the IDPs have enough financial resources
+          Having at least one member in the household who is employed increases the probability of IDPs to have enough financial resources by 23%
         </p>
         <div className='flex-div' style={{ fontSize: '0.875rem' }}>
           <div className='flex-div flex-vert-align-center flex-gap-02'>

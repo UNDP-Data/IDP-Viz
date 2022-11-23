@@ -73,7 +73,7 @@ export const OverviewEl = () => (
     </div>
     <div className='max-width margin-bottom-05'>
       <h3 className='undp-typography'>
-        All Nepalese IDPs in the sample moved earthquakes
+        All Nepalese IDPs in the sample moved due to earthquakes
       </h3>
       <div className='flex-wrap flex-div max-width flex-space-between' style={{ alignItems: 'stretch' }}>
         <DivEl width='calc(33.33% - 1rem)'>
