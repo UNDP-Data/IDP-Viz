@@ -40,7 +40,7 @@ export const HealthEl = () => (
       </CardEl>
       <CardEl className='stat-card' width='calc(50% - 1rem)'>
         <h2>23%</h2>
-        <p>More likely to IDPs experienced a physical health decline than hosts</p>
+        <p>More likely that IDPs experienced a physical health decline than hosts</p>
       </CardEl>
     </div>
     <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
