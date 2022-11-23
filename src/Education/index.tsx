@@ -107,7 +107,7 @@ export const EducationEl = () => (
         <p className='undp-typography'>
           <span className='bold'>No significant difference in school attendance is observed between IDP and host children</span>
           {' '}
-          or between boys and girls is observed at time of survey. However, on average, children who experienced breaks are 26% less likely to be attending school, pointing towards a long-term effect of past school breaks on school attendance. Still, once again the sample is too small to be definitive about this result.
+          or between boys and girls at time of survey. However, on average, children who experienced breaks are 26% less likely to be attending school, pointing towards a long-term effect of past school breaks on school attendance. Still, once again the sample is too small to be definitive about this result.
         </p>
       </DivEl>
     </div>

@@ -47,7 +47,7 @@ export const HealthEl = () => {
         </CardEl>
         <CardEl className='stat-card' width='calc(50% - 1rem)'>
           <h2>19%</h2>
-          <p>More likely to IDPs experienced a physical health decline than hosts</p>
+          <p>More likely that IDPs experienced a physical health decline than hosts</p>
         </CardEl>
       </div>
       <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
@@ -57,9 +57,6 @@ export const HealthEl = () => {
             <br />
             <br />
             The effects of displacement are not solely felt in the professional lives of IDPs, as 44% of IDPs reported that their health worsened compared to before they left home. In comparison to hosts with similar characteristics, IDPs are 19% more likely to have experienced a physical health decline after displacement happened. Among IDPs, no significant gender gap is observed in the probability for men and women to experience a decline in health.
-            {' '}
-            <span className='bold'>IDPs are 12% more likely to have experienced a physical health decline after displacement happened</span>
-            . Among IDPs, men and women have the same probability of experiencing a decline in health.
             <br />
             <br />
             <span className='bold'>Healthcare access after displacement appears to be a strong aggravating factor in the probability of experiencing a health decline</span>
@@ -71,7 +68,7 @@ export const HealthEl = () => {
             Probability of having experienced a health decline since displacement (lower is better)
           </h6>
           <p className='margin-bottom-07 bold undp-typography'>
-            Being an IDP is associated with on average a 12% higher probability of physical health decline after displacement
+            Being an IDP is associated with on average a 19% higher probability of physical health decline after displacement
           </p>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
             <div className='flex-div flex-vert-align-center flex-gap-02'>
