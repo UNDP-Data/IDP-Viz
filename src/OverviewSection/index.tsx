@@ -87,10 +87,13 @@ export const OverviewEl = () => (
             .
             <br />
             <br />
-            Not only do we have heterogeneity in the reason for displacements, but also the intensity varies. IDPs experience more occurrences of displacement when they are affected by droughts and conflicts followed by floods.
+            Not only do we have heterogeneity in the reason for displacements, but also the intensity varies. IDPs experience more occurrences of displacement when they are affected by droughts and floods.
           </p>
         </DivEl>
         <DivEl width='calc(66.66% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+          <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
+            Number of displacements
+          </h6>
           <StackedBarGraph
             data={[
               [19.37, 8.6, 5.61],
