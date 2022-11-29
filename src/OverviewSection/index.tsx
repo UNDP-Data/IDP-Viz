@@ -92,7 +92,7 @@ export const OverviewEl = () => (
         </DivEl>
         <DivEl width='calc(66.66% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
           <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
-            Number of displacements
+            Number of times displaced in the sample by event
           </h6>
           <StackedBarGraph
             data={[
