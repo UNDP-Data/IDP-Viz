@@ -69,13 +69,13 @@ export const HealthEl = () => {
             Being an IDP is associated with on average a 19% higher probability of physical health decline after displacement
           </p>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox />
               <div>
                 IDPs
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox radius='20px' />
               <div>
                 Hosts
@@ -100,26 +100,26 @@ export const HealthEl = () => {
         </p>
         <div className='flex-div flex-space-between'>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox />
               <div>
                 IDPs
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox radius='20px' />
               <div>
                 Host
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
-              <ColorBox color='var(--men-highlight)' />
+            <div className='flex-div flex-vert-align-center gap-02'>
+              <ColorBox color='#00c4a9' />
               <div>
                 Men
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
-              <ColorBox color='var(--women-highlight)' />
+            <div className='flex-div flex-vert-align-center gap-02'>
+              <ColorBox color='#8502f5' />
               <div>
                 Women
               </div>
