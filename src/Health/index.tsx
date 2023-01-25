@@ -3,8 +3,6 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { DumbellChart } from '../Graphs/DumbellChart';
 import { DumbellChartForHealthBySexAndEdu } from '../Graphs/DumbellChartForHealthBySexAndEdu';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -40,13 +38,13 @@ export const HealthEl = () => {
 
   return (
     <div>
-      <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
+      <div className='flex-wrap flex-div margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
         <CardEl className='stat-card' width='100%'>
           <h2>10%</h2>
           <p>More likely that IDPs experienced a physical health decline than before displacement</p>
         </CardEl>
       </div>
-      <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+      <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
         <DivEl width='calc(50% - 1rem)'>
           <p className='undp-typography'>
             IDPs do experience adverse health effects following displacement.
@@ -55,7 +53,7 @@ export const HealthEl = () => {
             . Moreover, people who experienced a decrease in healthcare access are 54% more likely of reporting a health decline highlighting the major role of access in the physical well-being of all people, IDP and hosts, men and women.
           </p>
         </DivEl>
-        <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+        <DivEl width='calc(50% - 2rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
           <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
             Probability of having experienced a health decline since displacement (lower is better)
           </h6>
@@ -63,13 +61,13 @@ export const HealthEl = () => {
             Being an IDP is associated with on average a 12% higher probability of physical health decline after displacement
           </p>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox />
               <div>
                 IDPs
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox radius='20px' />
               <div>
                 Hosts
@@ -85,7 +83,7 @@ export const HealthEl = () => {
           />
         </DivEl>
       </div>
-      <div className='max-width'>
+      <div>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probablity of Experiencing Health Decline by Gender and Health Care Access (lower is better)
         </h6>
@@ -94,26 +92,26 @@ export const HealthEl = () => {
         </p>
         <div className='flex-div flex-space-between'>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox />
               <div>
                 IDPs
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox radius='20px' />
               <div>
                 Host
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
-              <ColorBox color='var(--men-highlight)' />
+            <div className='flex-div flex-vert-align-center gap-02'>
+              <ColorBox color='#00c4a9' />
               <div>
                 Men
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
-              <ColorBox color='var(--women-highlight)' />
+            <div className='flex-div flex-vert-align-center gap-02'>
+              <ColorBox color='#8502f5' />
               <div>
                 Women
               </div>

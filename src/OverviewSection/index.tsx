@@ -1,4 +1,3 @@
-import '../style/statCardStyle.css';
 import styled from 'styled-components';
 
 interface WidthProps {
@@ -37,12 +36,12 @@ const DivEl = styled.div<WidthProps>`
 
 export const OverviewEl = () => (
   <div>
-    <div className='flex-wrap flex-div max-width margin-bottom-09 flex-space-between' style={{ alignItems: 'stretch' }}>
-      <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
+    <div className='flex-wrap flex-div margin-bottom-09 flex-space-between' style={{ alignItems: 'stretch' }}>
+      <CardEl className='stat-card' width='calc(25% - 4.75rem)'>
         <h2>37</h2>
         <p>Average age of IDP respondents</p>
       </CardEl>
-      <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
+      <CardEl className='stat-card' width='calc(25% - 4.75rem)'>
         <BarContainer>
           <div>
             IDPs
@@ -61,11 +60,11 @@ export const OverviewEl = () => (
         </BarContainer>
         <p>Have secondary education or above</p>
       </CardEl>
-      <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
+      <CardEl className='stat-card' width='calc(25% - 4.75rem)'>
         <h2>97%</h2>
         <p>IDPs live with at least one child under 18</p>
       </CardEl>
-      <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
+      <CardEl className='stat-card' width='calc(25% - 4.75rem)'>
         <h2>25%</h2>
         <p>IDPs households have at least one household member with disability</p>
       </CardEl>
@@ -74,7 +73,7 @@ export const OverviewEl = () => (
       <h3 className='undp-typography'>
         This survey studies people who were internally displaced following floods
       </h3>
-      <div className='flex-wrap flex-div max-width flex-space-between' style={{ alignItems: 'stretch' }}>
+      <div className='flex-wrap flex-div flex-space-between' style={{ alignItems: 'stretch' }}>
         <DivEl width='100%'>
           <p className='undp-typography'>
             In addition to floods, 8% reported they also had to leave their home because of conflict or violence. These IDPs had to move numerous times as 88% report they were displaced between 4 and 7 times.
@@ -82,16 +81,16 @@ export const OverviewEl = () => (
         </DivEl>
       </div>
     </div>
-    <div className='flex-wrap flex-div max-width margin-bottom-09 flex-space-between' style={{ alignItems: 'stretch' }}>
-      <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
+    <div className='flex-wrap flex-div margin-bottom-09 flex-space-between' style={{ alignItems: 'stretch' }}>
+      <CardEl className='stat-card' width='calc(33.33% - 4.67rem)'>
         <h2>99%</h2>
         <p>People in host communities were hosting IDPs at the time of the survey</p>
       </CardEl>
-      <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
+      <CardEl className='stat-card' width='calc(33.33% - 4.67rem)'>
         <h2>28%</h2>
         <p>People in host communities were hosting 5 IDPs or more</p>
       </CardEl>
-      <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
+      <CardEl className='stat-card' width='calc(33.33% - 4.67rem)'>
         <h2>87%</h2>
         <p>IDPs living with hosts were part of their close circle</p>
       </CardEl>

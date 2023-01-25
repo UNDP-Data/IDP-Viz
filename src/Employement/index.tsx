@@ -3,8 +3,6 @@ import { Checkbox } from 'antd';
 import { useState } from 'react';
 import { DumbellChart } from '../Graphs/DumbellChart';
 import { DumbellChartBySexAndEdu } from '../Graphs/DumbellChartBySexAndEdu';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -39,7 +37,7 @@ export const EmployementEl = () => {
   const [women, setWomen] = useState(true);
   return (
     <div>
-      <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
+      <div className='flex-wrap flex-div margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
         <CardEl className='stat-card' width='calc(50% - 1rem)'>
           <h2>1 out of 3</h2>
           <p>IDPs report falling into unemployment following displacement</p>
@@ -49,7 +47,7 @@ export const EmployementEl = () => {
           <p>less likely IDPs have one member employed compared to host</p>
         </CardEl>
       </div>
-      <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+      <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
         <DivEl width='calc(50% - 1rem)'>
           <p className='undp-typography'>
             Survey data highlight the major disruption in professional lives experienced by IDPs as 30% of them report falling into unemployment following displacement.  As a result,
@@ -70,13 +68,13 @@ export const EmployementEl = () => {
             Becomes Unemployed or Had to Earn in a Different Way (lower is better)
           </h6>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox />
               <div>
                 IDPs
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox radius='20px' />
               <div>
                 Host
@@ -92,32 +90,32 @@ export const EmployementEl = () => {
           />
         </DivEl>
       </div>
-      <div className='max-width'>
+      <div>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probablity of Employment by Gender and Education (higher is better)
         </h6>
         <div className='flex-div flex-space-between'>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox />
               <div>
                 IDPs
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox radius='20px' />
               <div>
                 Host
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
-              <ColorBox color='var(--men-highlight)' />
+            <div className='flex-div flex-vert-align-center gap-02'>
+              <ColorBox color='#00c4a9' />
               <div>
                 Men
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
-              <ColorBox color='var(--women-highlight)' />
+            <div className='flex-div flex-vert-align-center gap-02'>
+              <ColorBox color='#8502f5' />
               <div>
                 Women
               </div>
