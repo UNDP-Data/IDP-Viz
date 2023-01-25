@@ -41,14 +41,14 @@ export const SafetyEl = () => (
           Women living in shelter feel much less safe than the other IDPs living in other types of accomodation
         </p>
         <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
-            <ColorBox color='var(--men-highlight)' />
+          <div className='flex-div flex-vert-align-center gap-02'>
+            <ColorBox color='#00c4a9' />
             <div>
               Men
             </div>
           </div>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
-            <ColorBox color='var(--women-highlight)' />
+          <div className='flex-div flex-vert-align-center gap-02'>
+            <ColorBox color='#8502f5' />
             <div>
               Women
             </div>
