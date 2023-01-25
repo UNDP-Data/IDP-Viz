@@ -1,9 +1,6 @@
 import { Segmented } from 'antd';
 import { useState } from 'react';
 import { OverviewEl } from './OverviewSection';
-import './style/antd.css';
-import './style/style.css';
-import './style/segmentedStyle.css';
 import { EmployementEl } from './Employement';
 import { FinancialResourceEl } from './FinancialResource';
 import { HealthEl } from './Health';

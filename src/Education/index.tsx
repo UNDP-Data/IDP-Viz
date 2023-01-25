@@ -2,11 +2,8 @@ import styled from 'styled-components';
 import { Radio } from 'antd';
 import { useState } from 'react';
 import { DumbellChart } from '../Graphs/DumbellChart';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
 import { SingleLineChart } from '../Graphs/SingleLineChart';
 import { DumbellChartBySexAndBreaks } from '../Graphs/DumbellChartBySexAndBreaks';
-import '../style/radioStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -39,18 +36,18 @@ export const EducationEl = () => {
   const [selected, setSelected] = useState<1 | 2>(1);
   return (
     <div>
-      <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
-        <CardEl className='stat-card' width='calc(50% - 1rem)'>
+      <div className='flex-wrap flex-div margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
+        <CardEl className='stat-card' width='calc(50% - 4.5rem)'>
           <h2>2 out of 5</h2>
           <p>IDP children experienced breaks in education due to displacement</p>
         </CardEl>
-        <CardEl className='stat-card' width='calc(50% - 1rem)'>
+        <CardEl className='stat-card' width='calc(50% - 4.5rem)'>
           <h2>28%</h2>
           <p>more likely IDP children stopped going to school compared to host</p>
         </CardEl>
       </div>
-      <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
-        <DivEl width='calc(50% - 1rem)'>
+      <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+        <DivEl width='calc(50% - 2rem)'>
           <p className='undp-typography'>
             IDP children’s lives are also majorly impacted, especially as displacement has a strong effect on the continuity of their education.
             {' '}
@@ -58,7 +55,7 @@ export const EducationEl = () => {
             . Compared to hosts’ children with similar characteristics, children of IDPs are on average 28% more likely to have stopped going to school at some point. Children with many siblings are the most at risk: an internally displaced child with no siblings has a 54% probability of experiencing breaks in education compared to a 65% probability if he or she has three siblings. On the contrary, no major differences are observed between the probability of boys and girls to have experienced breaks in education.
           </p>
         </DivEl>
-        <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+        <DivEl width='calc(50% - 2rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
           <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
             Probability of having experienced breaks in schooling (lower is better)
           </h6>
@@ -85,8 +82,8 @@ export const EducationEl = () => {
           />
         </DivEl>
       </div>
-      <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
-        <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+      <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+        <DivEl width='calc(50% - 2rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
           <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
             Probability of attending school (higher is better)
           </h6>
@@ -112,7 +109,7 @@ export const EducationEl = () => {
             marks={['Host', 'IDP']}
           />
         </DivEl>
-        <DivEl width='calc(50% - 1rem)'>
+        <DivEl width='calc(50% - 2rem)'>
           <p className='undp-typography'>
             <span className='bold'>However, IDP parents appear successful in getting their children back into the education system</span>
             {' '}
@@ -123,8 +120,8 @@ export const EducationEl = () => {
           </p>
         </DivEl>
       </div>
-      <div className='max-width'>
-        <div className='max-width'>
+      <div>
+        <div>
           <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
             Changes in Probablity of Attending School with Time
           </h6>
@@ -140,7 +137,7 @@ export const EducationEl = () => {
           />
         </div>
       </div>
-      <div className='max-width'>
+      <div>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probablity of Attending School if there was a break or (higher is better)
         </h6>
