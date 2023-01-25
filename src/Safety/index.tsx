@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import { DumbellChartGenderForSafety } from '../Graphs/DumbellChartGenderForSafety';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -28,7 +26,7 @@ const ColorBox = styled.div<ColorBoxProps>`
 
 export const SafetyEl = () => (
   <div>
-    <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+    <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
       <DivEl>
         <p className='undp-typography'>
           <span className='bold'>90% of IDPs report feeling equally safe or safer in their host community than they did at home</span>
@@ -36,7 +34,7 @@ export const SafetyEl = () => (
           . This is 11 percentage points more than hosts with similar characteristics. This can be attributed to the effect of leaving danger zones. However, women who live in shelters remain particularly insecure as they only have a 59% probability of feeling equally safe or safer following displacement.
         </p>
       </DivEl>
-      <DivEl className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+      <DivEl className='margin-bottom-05'>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probability for IDPs to feel equally safe or safer than before (higher is better)
         </h6>

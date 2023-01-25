@@ -1,5 +1,3 @@
-import '../style/graphStyle.css';
-
 const Data = [
   {
     age: '18-29',
@@ -43,7 +41,7 @@ export const AgeDistributionGraph = () => {
   const barHeight = 30;
   const barGaps = 10;
   return (
-    <div className='margin-bottom-05 max-width'>
+    <div className='margin-bottom-05'>
       <h4 className='undp-typography margin-bottom-07'>
         Distribution of Respondents by Age and Gender
       </h4>

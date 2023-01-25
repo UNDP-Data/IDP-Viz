@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 import { DumbellChart } from '../Graphs/DumbellChart';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
-import '../style/radioStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -29,7 +26,7 @@ const ColorBox = styled.div<ColorBoxProps>`
 
 export const EducationEl = () => (
   <div>
-    <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-03' style={{ alignItems: 'stretch' }}>
+    <div className='flex-wrap flex-div flex-space-between margin-bottom-03' style={{ alignItems: 'stretch' }}>
       <DivEl width='100%'>
         <p className='undp-typography'>
           Again, when it comes to school attendance and breaks in education, for both outcomes,
@@ -39,8 +36,8 @@ export const EducationEl = () => (
         </p>
       </DivEl>
     </div>
-    <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
-      <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+    <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+      <DivEl width='calc(50% - 2.5rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probability of having experienced breaks in schooling (lower is better)
         </h6>
@@ -66,7 +63,7 @@ export const EducationEl = () => (
           marks={['Host', 'IDP']}
         />
       </DivEl>
-      <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+      <DivEl width='calc(50% - 2.5rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probability of attending school (higher is better)
         </h6>

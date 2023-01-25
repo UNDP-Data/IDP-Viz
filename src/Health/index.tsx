@@ -3,8 +3,6 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { DumbellChart } from '../Graphs/DumbellChart';
 import { DumbellChartForHealthBySexAndEdu } from '../Graphs/DumbellChartForHealthBySexAndEdu';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -40,14 +38,14 @@ export const HealthEl = () => {
 
   return (
     <div>
-      <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
+      <div className='flex-wrap flex-div margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
         <CardEl className='stat-card' width='100%'>
           <h2>98%</h2>
           <p>IDPs report their health is equal or better after moving</p>
         </CardEl>
       </div>
-      <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
-        <DivEl width='calc(50% - 1rem)'>
+      <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+        <DivEl width='calc(50% - 0.5rem)'>
           <p className='undp-typography'>
             <span className='bold'>IDPs’ physical health was mostly unaffected by the displacement</span>
             . A majority of IDPs surveyed report that their physical health is equal or better after moving (84% equal, 14% better) and no difference is observed between the physical health of IDPs and hosts.
@@ -56,7 +54,7 @@ export const HealthEl = () => {
             This is true for both men and women. For the 30% of IDPs who report that they had a better access to healthcare at home, the probability of a physical health decline is 14 percentage points higher on average. Still, the effect on hosts is also very similar.
           </p>
         </DivEl>
-        <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+        <DivEl width='calc(50% - 2.5rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
           <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
             Probability of having experienced a health decline since displacement (lower is better)
           </h6>
@@ -86,7 +84,7 @@ export const HealthEl = () => {
           />
         </DivEl>
       </div>
-      <div className='max-width'>
+      <div>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probablity of Experiencing Health Decline by Gender and Health Care Access (lower is better)
         </h6>

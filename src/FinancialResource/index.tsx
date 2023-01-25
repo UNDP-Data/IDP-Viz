@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { DumbellChart } from '../Graphs/DumbellChart';
 import { LineChart } from '../Graphs/LineChart';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -29,13 +27,13 @@ const ColorBox = styled.div<ColorBoxProps>`
 
 export const FinancialResourceEl = () => (
   <div>
-    <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
-      <DivEl width='calc(50% - 1rem)'>
+    <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+      <DivEl width='calc(50% - 0.5rem)'>
         <p className='undp-typography'>
           Interestingly, IDPs are even more likely than hosts to have enough financial resources for their needs. Among IDPs, displacement duration is significant and positive suggesting that every six additional months in the host community increases the probability of having enough financial resources by 19% once again suggesting that IDPs are integrated well and quickly in these communities.
         </p>
       </DivEl>
-      <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+      <DivEl width='calc(50% - 2.5rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probablity of having financial resource to meet the household needs (higher is better)
         </h6>
@@ -62,8 +60,8 @@ export const FinancialResourceEl = () => (
         />
       </DivEl>
     </div>
-    <div className='max-width'>
-      <div className='max-width'>
+    <div>
+      <div>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Changes in probablity of IDP household having atleast one member employed and have enough financial resources with time
         </h6>
