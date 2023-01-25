@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { DumbellChart } from '../Graphs/DumbellChart';
 import { LineChart } from '../Graphs/LineChart';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -33,18 +31,18 @@ const ColorBox = styled.div<ColorBoxProps>`
 
 export const FinancialResourceEl = () => (
   <div>
-    <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
-      <CardEl className='stat-card' width='calc(50% - 1rem)'>
+    <div className='flex-wrap flex-div margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
+      <CardEl className='stat-card' width='calc(50% - 4.5rem)'>
         <h2>1 out of 2</h2>
         <p>IDPs report reduced earning after displacement</p>
       </CardEl>
-      <CardEl className='stat-card' width='calc(50% - 1rem)'>
+      <CardEl className='stat-card' width='calc(50% - 4.5rem)'>
         <h2>94%</h2>
         <p>IDPs report not having enough financial resources to meet their households’ needs</p>
       </CardEl>
     </div>
-    <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
-      <DivEl width='calc(50% - 1rem)'>
+    <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+      <DivEl width='calc(50% - 0.5rem)'>
         <p className='undp-typography'>
           Survey data highlight the major disruption in professional lives experienced by IDPs as 46% of them report falling into unemployment following displacement. Moreover, the share of households who have enough financial resources to meet their families’ needs dropped dramatically, going from 83% before displacement to only 6% afterwards. Compared to hosts with similar characteristics,
           {' '}
@@ -55,7 +53,7 @@ export const FinancialResourceEl = () => (
           . Similar levels of unemployment and financial resources are found amongst the newly displaced and those that have been displaced for several years pointing towards no improvement in the long term.
         </p>
       </DivEl>
-      <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+      <DivEl width='calc(50% - 2.5rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probablity of having financial resource to meet the household needs (higher is better)
         </h6>
@@ -82,8 +80,8 @@ export const FinancialResourceEl = () => (
         />
       </DivEl>
     </div>
-    <div className='max-width'>
-      <div className='max-width'>
+    <div>
+      <div>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Changes in Probablity of IDP household having atleast one member employed and Have Enough Financial Resources with Time
         </h6>

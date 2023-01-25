@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 import { DumbellChart } from '../Graphs/DumbellChart';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
-import '../style/radioStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -33,14 +30,14 @@ const ColorBox = styled.div<ColorBoxProps>`
 
 export const EducationEl = () => (
   <div>
-    <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
+    <div className='flex-wrap flex-div margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
       <CardEl className='stat-card' width='100%'>
         <h2>2 out of 5</h2>
         <p>IDP children experienced breaks in education due to displacement</p>
       </CardEl>
     </div>
-    <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
-      <DivEl width='calc(50% - 1rem)'>
+    <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+      <DivEl width='calc(50% - 0.5rem)'>
         <p className='undp-typography'>
           IDP children’s lives are also majorly impacted, especially as displacement has a strong effect on the continuity of their education.  Before the displacement happened, a larger share of hosts’ children (81%) was attending school compared to IDPs (69%). In both groups, more boys were attending school than girls with a larger sex difference among IDPs than among hosts. Over 42% of IDP children experienced breaks in education due to displacement. However,
           {' '}
@@ -49,7 +46,7 @@ export const EducationEl = () => (
           while men IDPs and men hosts have close probabilities of having stopped going to school at some point. Internally displaced girls have a 50% chance having experienced breaks in education compared to 14% for their host counterparts. However, considering only 29 girls are observed the results should be interpreted with caution and larger samples are needed to determine clear conclusions and draw policy recommendations from these results.
         </p>
       </DivEl>
-      <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+      <DivEl width='calc(50% - 2.5rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probability of having experienced breaks in schooling (lower is better)
         </h6>
@@ -76,8 +73,8 @@ export const EducationEl = () => (
         />
       </DivEl>
     </div>
-    <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
-      <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+    <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+      <DivEl width='calc(50% - 2.5rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probability of attending school (higher is better)
         </h6>
@@ -103,7 +100,7 @@ export const EducationEl = () => (
           marks={['Host', 'IDP']}
         />
       </DivEl>
-      <DivEl width='calc(50% - 1rem)'>
+      <DivEl width='calc(50% - 0.5rem)'>
         <p className='undp-typography'>
           <span className='bold'>No significant difference in school attendance is observed between IDP and host children</span>
           {' '}

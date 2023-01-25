@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import { DumbellChart } from '../Graphs/DumbellChart';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -28,14 +26,14 @@ const ColorBox = styled.div<ColorBoxProps>`
 
 export const SafetyEl = () => (
   <div>
-    <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+    <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
       <DivEl>
         <p className='undp-typography'>
           <span className='bold'>The vast majority of IDPs (75%) feel as safe now as they did before</span>
           .  Only 6 IDPs feel less safe now than they did at home.  Thus, compared to before, on average, IDPs feel 16% more safe than hosts after displacement.
         </p>
       </DivEl>
-      <DivEl className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+      <DivEl className='margin-bottom-05'>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probability for IDPs to feel equally safe or safer than before (higher is better)
         </h6>
