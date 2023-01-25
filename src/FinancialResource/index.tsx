@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import { DumbellChart } from '../Graphs/DumbellChart';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -28,7 +26,7 @@ const ColorBox = styled.div<ColorBoxProps>`
 
 export const FinancialResourceEl = () => (
   <div>
-    <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+    <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
       <DivEl width='calc(50% - 1rem)'>
         <p className='undp-typography'>
           While IDPs are less likely to be employed, at equal employment status and equal characteristics, they are as likely as hosts of having enough financial resources to meet their household’s needs. Moreover,
@@ -37,7 +35,7 @@ export const FinancialResourceEl = () => (
           . These results show how beneficial it can be to improve IDP’s integration on the labour market in hosts communities
         </p>
       </DivEl>
-      <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+      <DivEl width='calc(50% - 2rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probablity of having financial resource to meet the household needs (higher is better)
         </h6>
@@ -45,13 +43,13 @@ export const FinancialResourceEl = () => (
           Having at least one member in the household who is employed increases the probability of IDPs to have enough financial resources by 23%
         </p>
         <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
+          <div className='flex-div flex-vert-align-center gap-02'>
             <ColorBox />
             <div>
               No one employed
             </div>
           </div>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
+          <div className='flex-div flex-vert-align-center gap-02'>
             <ColorBox radius='20px' />
             <div>
               At least one member employed
