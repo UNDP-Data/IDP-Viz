@@ -42,13 +42,13 @@ export const EducationEl = () => (
           Probability of having experienced breaks in schooling (lower is better)
         </h6>
         <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
+          <div className='flex-div flex-vert-align-center gap-02'>
             <ColorBox />
             <div>
               IDPs
             </div>
           </div>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
+          <div className='flex-div flex-vert-align-center gap-02'>
             <ColorBox radius='20px' />
             <div>
               Host
@@ -58,6 +58,7 @@ export const EducationEl = () => (
         <DumbellChart
           maxValue={1}
           data={[[0.42, 0.46], [0.47, 0.46], [0.33, 0.47]]}
+          anchor={[['end', 'start'], ['start', 'end'], ['middle', 'middle']]}
           titles={['All', 'Boys', 'Girls']}
           labelSuffix=''
           marks={['Host', 'IDP']}
@@ -68,13 +69,13 @@ export const EducationEl = () => (
           Probability of attending school (higher is better)
         </h6>
         <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
+          <div className='flex-div flex-vert-align-center gap-02'>
             <ColorBox />
             <div>
               IDPs
             </div>
           </div>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
+          <div className='flex-div flex-vert-align-center gap-02'>
             <ColorBox radius='20px' />
             <div>
               Host
@@ -85,6 +86,7 @@ export const EducationEl = () => (
           maxValue={1}
           data={[[0.93, 0.91], [0.96, 0.94], [0.89, 0.86]]}
           titles={['All', 'Boys', 'Girls']}
+          anchor={[['start', 'end'], ['start', 'end'], ['start', 'end']]}
           labelSuffix=''
           marks={['Host', 'IDP']}
         />

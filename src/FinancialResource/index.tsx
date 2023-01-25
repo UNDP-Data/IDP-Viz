@@ -38,13 +38,13 @@ export const FinancialResourceEl = () => (
           Probablity of having financial resource to meet the household needs (higher is better)
         </h6>
         <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
+          <div className='flex-div flex-vert-align-center gap-02'>
             <ColorBox />
             <div>
               IDP
             </div>
           </div>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
+          <div className='flex-div flex-vert-align-center gap-02'>
             <ColorBox radius='20px' />
             <div>
               Host
@@ -70,13 +70,13 @@ export const FinancialResourceEl = () => (
         </p>
         <div className='flex-div'>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox color='var(--blue-600)' />
               <div>
                 Probability of the IDP household having enough financial resources
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox color='var(--dark-green)' />
               <div>
                 Probability of the IDP household having at least one member employed
