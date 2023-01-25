@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import { DumbellChart } from '../Graphs/DumbellChart';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -32,14 +30,14 @@ const ColorBox = styled.div<ColorBoxProps>`
 
 export const FinancialResourceEl = () => (
   <div>
-    <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
+    <div className='flex-wrap flex-div margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
       <CardEl className='stat-card' width='100%'>
         <h2>32%</h2>
         <p>Less likely IDPs have enough sufficient financial resources to fulfil their household’s needs when compared to host at equal employment status and equal characteristics</p>
       </CardEl>
     </div>
-    <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
-      <DivEl width='calc(50% - 1rem)'>
+    <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+      <DivEl width='calc(50% - 2rem)'>
         <p className='undp-typography'>
           In addition to being less likely to be employed,
           {' '}
@@ -47,18 +45,18 @@ export const FinancialResourceEl = () => (
           , at equal employment status and equal characteristics. Indeed, employment in the household has no significant effect on the resources of IDPs.  The difference between IDPs and hosts is especially striking when comparing women IDPs and women hosts with a 41-percentage points difference. Moreover, employment does not have a significant effect on the financial resources of IDPs.
         </p>
       </DivEl>
-      <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+      <DivEl width='calc(50% - 2rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probablity of having financial resource to meet the household needs (higher is better)
         </h6>
         <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
+          <div className='flex-div flex-vert-align-center gap-02'>
             <ColorBox />
             <div>
               IDP
             </div>
           </div>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
+          <div className='flex-div flex-vert-align-center gap-02'>
             <ColorBox radius='20px' />
             <div>
               Host

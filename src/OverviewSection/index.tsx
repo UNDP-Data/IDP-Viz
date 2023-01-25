@@ -1,4 +1,3 @@
-import '../style/statCardStyle.css';
 import styled from 'styled-components';
 import { StackedBarGraph } from '../Graphs/StackedBarGraph';
 
@@ -38,12 +37,12 @@ const DivEl = styled.div<WidthProps>`
 
 export const OverviewEl = () => (
   <div>
-    <div className='flex-wrap flex-div max-width margin-bottom-09 flex-space-between' style={{ alignItems: 'stretch' }}>
-      <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
+    <div className='flex-wrap flex-div margin-bottom-09 flex-space-between' style={{ alignItems: 'stretch' }}>
+      <CardEl className='stat-card' width='calc(25% - 4.75rem)'>
         <h2>42</h2>
         <p>Average age of IDP respondents</p>
       </CardEl>
-      <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
+      <CardEl className='stat-card' width='calc(25% - 4.75rem)'>
         <BarContainer>
           <div>
             IDPs
@@ -62,21 +61,21 @@ export const OverviewEl = () => (
         </BarContainer>
         <p>Have secondary education or above</p>
       </CardEl>
-      <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
+      <CardEl className='stat-card' width='calc(25% - 4.75rem)'>
         <h2>79%</h2>
         <p>IDPs live with at least one child under 18</p>
       </CardEl>
-      <CardEl className='stat-card' width='calc(25% - 1.5rem)'>
+      <CardEl className='stat-card' width='calc(25% - 4.75rem)'>
         <h2>5%</h2>
         <p>IDPs households have at least one household member with disability</p>
       </CardEl>
     </div>
-    <div className='max-width margin-bottom-05'>
+    <div className='margin-bottom-05'>
       <h3 className='undp-typography'>
         In Vanuatu, people were internally displaced following a volcanic eruption
       </h3>
-      <div className='flex-wrap flex-div max-width flex-space-between' style={{ alignItems: 'stretch' }}>
-        <DivEl width='calc(33.33% - 1rem)'>
+      <div className='flex-wrap flex-div flex-space-between' style={{ alignItems: 'stretch' }}>
+        <DivEl width='calc(33.33% - 2rem)'>
           <p className='undp-typography'>
             47% of those IDPs moved once and 50% moved twice to arrive in the Espiritu region where they are now located. 58% come from the Ambae Island and the rest come from other regions. The average IDP has been settled on average for three years and seven months. The earliest arrivals date back from four years and three months before the survey and the latest from two years.
           </p>
@@ -124,16 +123,16 @@ export const OverviewEl = () => (
         </DivEl>
       </div>
     </div>
-    <div className='flex-wrap flex-div max-width margin-bottom-09 flex-space-between' style={{ alignItems: 'stretch' }}>
-      <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
+    <div className='flex-wrap flex-div margin-bottom-09 flex-space-between' style={{ alignItems: 'stretch' }}>
+      <CardEl className='stat-card' width='calc(33.33% - 4.67rem)'>
         <h2>82%</h2>
         <p>People in host communities were hosting IDPs at the time of the survey</p>
       </CardEl>
-      <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
+      <CardEl className='stat-card' width='calc(33.33% - 4.67rem)'>
         <h2>68%</h2>
         <p>People in host communities were hosting more than 5 IDPs</p>
       </CardEl>
-      <CardEl className='stat-card' width='calc(33.33% - 1.33rem)'>
+      <CardEl className='stat-card' width='calc(33.33% - 4.67rem)'>
         <h2>49%</h2>
         <p>IDPs living with hosts were part of their close circle</p>
       </CardEl>

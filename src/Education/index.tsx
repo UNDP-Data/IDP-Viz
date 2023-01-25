@@ -2,9 +2,6 @@ import styled from 'styled-components';
 import { Radio } from 'antd';
 import { useState } from 'react';
 import { DumbellChart } from '../Graphs/DumbellChart';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
-import '../style/radioStyle.css';
 import { LineChart } from '../Graphs/LineChart';
 
 interface WidthProps {
@@ -38,18 +35,18 @@ export const EducationEl = () => {
   const [selected, setSelected] = useState<1 | 2>(1);
   return (
     <div>
-      <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
-        <CardEl className='stat-card' width='calc(50% - 1rem)'>
+      <div className='flex-wrap flex-div margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
+        <CardEl className='stat-card' width='calc(50% - 4.5rem)'>
           <h2>4 out of 5</h2>
           <p>IDP children experienced breaks in education due to displacement</p>
         </CardEl>
-        <CardEl className='stat-card' width='calc(50% - 1rem)'>
+        <CardEl className='stat-card' width='calc(50% - 4.5rem)'>
           <h2>58%</h2>
           <p>more likely IDP children stopped going to school compared to host</p>
         </CardEl>
       </div>
-      <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
-        <DivEl width='calc(50% - 1rem)'>
+      <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+        <DivEl width='calc(50% - 2rem)'>
           <p className='undp-typography'>
             <span className='bold'>IDP children’s lives are also majorly impacted, especially as displacement has a strong effect on the continuity of their education</span>
             . Before displacement, IDPs’ attendance rate (95%) was a slightly smaller than the one of host (98%), driven by the difference among girls.
@@ -58,18 +55,18 @@ export const EducationEl = () => {
             . Compared to hosts’ children with similar characteristics, children of IDPs are on average 58% more likely to have stopped going to school at some point. On average, no major differences are observed between the probability of boys and girls to have experienced breaks in education. However, for both sexes and for both IDPs and hosts, children with many siblings are the most at risk.
           </p>
         </DivEl>
-        <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+        <DivEl width='calc(50% - 2rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
           <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
             Probability of having experienced breaks in schooling (lower is better)
           </h6>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox />
               <div>
                 IDPs
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox radius='20px' />
               <div>
                 Host
@@ -85,19 +82,19 @@ export const EducationEl = () => {
           />
         </DivEl>
       </div>
-      <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
-        <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+      <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+        <DivEl width='calc(50% - 2rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
           <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
             Probability of attending school (higher is better)
           </h6>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox />
               <div>
                 IDPs
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox radius='20px' />
               <div>
                 Host
@@ -112,7 +109,7 @@ export const EducationEl = () => {
             marks={['Host', 'IDP']}
           />
         </DivEl>
-        <DivEl width='calc(50% - 1rem)'>
+        <DivEl width='calc(50% - 2rem)'>
           <p className='undp-typography'>
             However, at time of survey, IDP children are just as likely to be attending school as hosts’ children suggesting that
             {' '}
@@ -122,19 +119,19 @@ export const EducationEl = () => {
           </p>
         </DivEl>
       </div>
-      <div className='max-width'>
+      <div>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probablity of Attending School if there was a break or (higher is better)
         </h6>
         <div className='flex-div flex-space-between'>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox color='var(--dark-green)' />
               <div>
                 IDP
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox color='var(--blue-500)' />
               <div>
                 Host
