@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
 import { LineChart } from '../Graphs/LineChart';
 
 interface WidthProps {
@@ -32,13 +30,13 @@ const ColorBox = styled.div<ColorBoxProps>`
 
 export const EmployementEl = () => (
   <div>
-    <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
+    <div className='flex-wrap flex-div margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
       <CardEl className='stat-card' width='100%'>
         <h2>1 out of 20</h2>
         <p>IDPs households report having enough financial resources to meet their need</p>
       </CardEl>
     </div>
-    <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+    <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
       <DivEl width='100%'>
         <p className='undp-typography'>
           Survey data highlight the major disruption in professional lives experienced by IDPs as 31% of them report falling into unemployment following displacement. Moreover, the share of households who have enough financial resources to meet their families’ needs dropped dramatically, going from 75% before displacement to only 5% afterwards. Compared to hosts with similar characteristics,
@@ -48,8 +46,8 @@ export const EmployementEl = () => (
         </p>
       </DivEl>
     </div>
-    <div className='max-width'>
-      <div className='max-width'>
+    <div>
+      <div>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Changes in Probablity of IDP household having atleast one member employed and Have Enough Financial Resources with Time
         </h6>
@@ -58,13 +56,13 @@ export const EmployementEl = () => (
         </p>
         <div className='flex-div'>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox color='var(--blue-600)' />
               <div>
                 Probability of the IDP household having enough financial resources
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox color='var(--dark-green)' />
               <div>
                 Probability of the IDP household having at least one member employed
