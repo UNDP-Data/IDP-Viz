@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import { DumbellChartGender } from '../Graphs/DumbellChartGender';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -28,14 +26,14 @@ const ColorBox = styled.div<ColorBoxProps>`
 
 export const SafetyEl = () => (
   <div>
-    <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+    <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
       <DivEl>
         <p className='undp-typography'>
           <span className='bold'>While 62% of IDPs now feel equally safe or safer than before, IDP women living in shelters remain largely unsafe</span>
           .  From the sample, 6% of IDPs live in either collective or make-shift shelters. For these IDPs, the probability of feeling equally safe or safer now than before they left home is 33% less than for IDPs living either in their homes or with someone else. Women are especially vulnerable as they only have a 20% probability of feeling equally safe or safer if they live in a shelter. In comparison, the probability is 66% for women living in a home they own or rent.
         </p>
       </DivEl>
-      <DivEl className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+      <DivEl className='margin-bottom-05'>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probability for IDPs to feel equally safe or safer than before based on housing situation (higher is better)
         </h6>
@@ -43,14 +41,14 @@ export const SafetyEl = () => (
           Women living in shelter feel much less safe than the other IDPs living in other types of accomodation
         </p>
         <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
-            <ColorBox color='var(--men-highlight)' />
+          <div className='flex-div flex-vert-align-center gap-02'>
+            <ColorBox color='#00c4a9' />
             <div>
               Men
             </div>
           </div>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
-            <ColorBox color='var(--women-highlight)' />
+          <div className='flex-div flex-vert-align-center gap-02'>
+            <ColorBox color='#8502f5' />
             <div>
               Women
             </div>

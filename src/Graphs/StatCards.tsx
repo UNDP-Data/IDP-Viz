@@ -1,4 +1,3 @@
-import '../style/statCardStyle.css';
 import styled from 'styled-components';
 
 const CardEl = styled.div`
@@ -6,7 +5,7 @@ const CardEl = styled.div`
 `;
 
 export const StatCards = () => (
-  <div className='flex-wrap flex-div max-width margin-bottom-09' style={{ alignItems: 'stretch' }}>
+  <div className='flex-wrap flex-div margin-bottom-09' style={{ alignItems: 'stretch' }}>
     <CardEl className='stat-card'>
       <h2>40</h2>
       <h4>Average age of IDP respondents</h4>
