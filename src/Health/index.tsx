@@ -3,8 +3,6 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { DumbellChart } from '../Graphs/DumbellChart';
 import { DumbellChartForHealthBySexAndEdu } from '../Graphs/DumbellChartForHealthBySexAndEdu';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -40,18 +38,18 @@ export const HealthEl = () => {
 
   return (
     <div>
-      <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
-        <CardEl className='stat-card' width='calc(50% - 1rem)'>
+      <div className='flex-wrap flex-div margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
+        <CardEl className='stat-card' width='calc(50% - 4.5rem)'>
           <h2>1 out of 5</h2>
           <p>IDPs report their health worsened after displacement</p>
         </CardEl>
-        <CardEl className='stat-card' width='calc(50% - 1rem)'>
+        <CardEl className='stat-card' width='calc(50% - 4.5rem)'>
           <h2>14%</h2>
           <p>More likely that IDPs experienced a physical health decline than hosts</p>
         </CardEl>
       </div>
-      <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
-        <DivEl width='calc(50% - 1rem)'>
+      <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+        <DivEl width='calc(50% - 0.5rem)'>
           <p className='undp-typography'>
             The effects of displacement are not solely felt in the professional lives of IDPs, as 17% of IDPs reported that their health worsened compared to before they left home. Compared to hosts with similar characteristics, IDPs are 14% more likely to have experienced a physical health decline after displacement happened. Among IDPs, men and women have the same probability of experiencing a decline in health.
             <br />
@@ -59,7 +57,7 @@ export const HealthEl = () => {
             Healthcare access after displacement does not appear to be a significant aggravating factor in the probability of experiencing a health decline.
           </p>
         </DivEl>
-        <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+        <DivEl width='calc(50% - 2.5rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
           <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
             Probability of having experienced a health decline since displacement (lower is better)
           </h6>
@@ -86,7 +84,7 @@ export const HealthEl = () => {
           />
         </DivEl>
       </div>
-      <div className='max-width'>
+      <div>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probablity of Experiencing Health Decline in IDPs by Gender and Health Care Access (lower is better)
         </h6>

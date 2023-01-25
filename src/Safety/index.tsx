@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import { DumbellChart } from '../Graphs/DumbellChart';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -28,7 +26,7 @@ const ColorBox = styled.div<ColorBoxProps>`
 
 export const SafetyEl = () => (
   <div>
-    <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+    <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
       <DivEl>
         <p className='undp-typography'>
           <span className='bold'>IDPs are 24% less likely than hosts of feeling equally safe or safer after displacement</span>
@@ -36,7 +34,7 @@ export const SafetyEl = () => (
           happened and this result is driven by women IDPs who feel 29% less safe than women hosts.
         </p>
       </DivEl>
-      <DivEl className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+      <DivEl className='margin-bottom-05'>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probability for IDPs to feel equally safe or safer than before (higher is better)
         </h6>

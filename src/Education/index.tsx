@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 import { DumbellChart } from '../Graphs/DumbellChart';
-import '../style/checkboxStyle.css';
-import '../style/statCardStyle.css';
-import '../style/radioStyle.css';
 
 interface WidthProps {
   width?: string;
@@ -33,14 +30,14 @@ const ColorBox = styled.div<ColorBoxProps>`
 
 export const EducationEl = () => (
   <div>
-    <div className='flex-wrap flex-div max-width margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
+    <div className='flex-wrap flex-div margin-bottom-07 flex-space-between' style={{ alignItems: 'stretch' }}>
       <CardEl className='stat-card' width='100%'>
         <h2>1 out of 10</h2>
         <p>IDP children experienced breaks in education due to displacement</p>
       </CardEl>
     </div>
-    <div className='flex-wrap flex-div max-width flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
-      <DivEl width='calc(50% - 1rem)'>
+    <div className='flex-wrap flex-div flex-space-between margin-bottom-07' style={{ alignItems: 'stretch' }}>
+      <DivEl width='calc(50% - 0.5rem)'>
         <p className='undp-typography'>
           <span className='bold'>IDP children’s education does not appear to be majorly impacted</span>
           <br />
@@ -48,7 +45,7 @@ export const EducationEl = () => (
           10% of IDP children experienced breaks in education and compared to hosts’ children with similar characteristics, children of IDPs are not more likely to have stopped going to school at some point. On average, no major differences are observed between the probability of boys and girls to have experienced breaks in education either.
         </p>
       </DivEl>
-      <DivEl width='calc(50% - 1rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
+      <DivEl width='calc(50% - 2.5rem)' className='margin-bottom-05' style={{ backgroundColor: 'var(--gray-100)', padding: 'var(--spacing-05)' }}>
         <h6 className='undp-typography' style={{ color: 'var(--blue-500)' }}>
           Probability of having experienced breaks in schooling (lower is better)
         </h6>
