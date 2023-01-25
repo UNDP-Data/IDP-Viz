@@ -39,13 +39,13 @@ export const SafetyEl = () => (
           Probability for IDPs to feel equally safe or safer than before (higher is better)
         </h6>
         <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
+          <div className='flex-div flex-vert-align-center gap-02'>
             <ColorBox />
             <div>
               IDPs
             </div>
           </div>
-          <div className='flex-div flex-vert-align-center flex-gap-02'>
+          <div className='flex-div flex-vert-align-center gap-02'>
             <ColorBox radius='20px' />
             <div>
               Host

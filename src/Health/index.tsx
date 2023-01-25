@@ -62,13 +62,13 @@ export const HealthEl = () => {
             Probability of having experienced a health decline since displacement (lower is better)
           </h6>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox />
               <div>
                 IDPs
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
+            <div className='flex-div flex-vert-align-center gap-02'>
               <ColorBox radius='20px' />
               <div>
                 Hosts
@@ -90,14 +90,14 @@ export const HealthEl = () => {
         </h6>
         <div className='flex-div flex-space-between'>
           <div className='flex-div' style={{ fontSize: '0.875rem' }}>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
-              <ColorBox color='var(--men-highlight)' />
+            <div className='flex-div flex-vert-align-center gap-02'>
+              <ColorBox color='#00c4a9' />
               <div>
                 Men
               </div>
             </div>
-            <div className='flex-div flex-vert-align-center flex-gap-02'>
-              <ColorBox color='var(--women-highlight)' />
+            <div className='flex-div flex-vert-align-center gap-02'>
+              <ColorBox color='#8502f5' />
               <div>
                 Women
               </div>

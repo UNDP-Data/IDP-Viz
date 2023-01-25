@@ -81,7 +81,7 @@ export const OverviewEl = () => (
         </DivEl>
       </div>
     </div>
-    <div className='flex-wrap flex-div max-width margin-bottom-09 flex-space-between' style={{ alignItems: 'stretch' }}>
+    <div className='flex-wrap flex-div margin-bottom-09 flex-space-between' style={{ alignItems: 'stretch' }}>
       <CardEl className='stat-card' width='calc(33.33% - 4.67rem)'>
         <h2>64%</h2>
         <p>People in host communities were hosting IDPs at the time of the survey</p>
